@@ -1,0 +1,89 @@
+{
+  "basics": {
+    "name": "Dominik Wagner",
+    "label": "Programmer",
+    "picture": "",
+    "email": "dominik.wagner@sz-ybbs.ac.at",
+    "phone": "(912) 555-4321",
+    "website": "http://wagnerdominik.at",
+    "summary": "Ich bin ein Software Developer & Sysadmin aus Melk (NÖ). Nach Feierabend arbeite ich gerne noch an großen und kleinen Hobbyprojekten. Einige Projekte (auch der Source dieser Seite) sind unter meinem Github-Account zu finden. Abseits vom Bildschirmen gehe ich gern Wandern und spiele Volleyball.",
+    "location": {
+      "address": "Stelzerstraße 35",
+      "postalCode": "4020",
+      "city": "Linz",
+      "countryCode": "AT",
+      "region": "Oberösterreich"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "wgnrd",
+        "url": ""
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Programmierfabrik",
+      "position": "Junior Developer",
+      "website": "http://www.programmierfabrik.at",
+      "startDate": "2016-07-01",
+      "summary": "Developer in verschiedenen Projekten",
+      "highlights": [
+        "Aufbau eines Webportal für E-Government",
+        "Sprintleiter in einem externen Projekt"
+        ]
+    },
+    {
+      "company": "Rettungsstelle Melk",
+      "position": "Zivildiener",
+      "website": "",
+      "startDate": "2015-09-01",
+      "endDate": "2016-06-31",
+      "summary": "Zivildiener in der Rettungsstelle Melk",
+      "highlights": [
+        "Ausbildung zum Sanitäter"
+        ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "IT HTL-Ybbs",
+      "area": "Netzwerktechnik",
+      "studyType": "Maturareife",
+      "startDate": "2010-09-01",
+      "endDate": "2015-07-01"
+    }
+  ],
+  
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Mid-Tier",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "C#",
+      "level": "Mid-Tier"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Englisch",
+      "fluency": "Flüssig"
+    },
+    {
+      "language": "Deutsch",
+      "fluency": "Muttersprache"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wandern"
+    }
+  ]
+}
