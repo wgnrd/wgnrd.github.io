@@ -1,8 +1,8 @@
 {
-  "website":{
+  "website": {
     "title": ""
   },
-  "nav":{
+  "nav": {
     "home": "Home",
     "about_me": "Über mich",
     "skills": "",
@@ -11,18 +11,21 @@
     "blog": "",
     "link": "Links"
   },
-  "about_me":{
+  "about_me": {
     "about_me": "Über mich",
     "des": "Ich bin ein Software Developer & Sysadmin aus Melk (NÖ). Nach Feierabend arbeite ich gerne noch an großen und kleinen Hobbyprojekten. Einige Projekte (auch der Source dieser Seite) sind unter meinem Github-Account zu finden. Abseits vom Bildschirmen gehe ich gern Wandern und spiele Volleyball."
   },
-  "skills":{
+  "skills": {
     "my_skills": ""
   },
-  "projects":{
+  "projects": {
     "my_projects": "Meine Projekte",
     "Run!": "Diplomarbeit zum Abschluss der RDP im Jahr 2015. Run! ist eine Interaktive 3D Simulation in VR."
   },
-  "career":{
+  "blog": {
+    "my_blog": "My Blog"
+  },
+  "career": {
     "my_career": "Karriere",
     "prgrmrfbrk": "Programmierfabrik",
     "prgrmrfbrk_desc": "DevOp in verschiedenen Projekten",
@@ -41,12 +44,11 @@
     "hs_date": "09.2006",
     "hs_job": "Schüler"
   },
-  "blog":{
+  "blog": {
     "my_blog": ""
   },
-  "link":{
+  "link": {
     "link": "Links",
     "view": ""
   }
-
 }
