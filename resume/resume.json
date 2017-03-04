@@ -1,89 +1,417 @@
 {
-  "basics": {
-    "name": "Dominik Wagner",
-    "label": "Programmer",
-    "picture": "",
-    "email": "dominik.wagner@sz-ybbs.ac.at",
-    "phone": "(912) 555-4321",
-    "website": "http://wagnerdominik.at",
-    "summary": "Ich bin ein Software Developer & Sysadmin aus Melk (NÖ). Nach Feierabend arbeite ich gerne noch an großen und kleinen Hobbyprojekten. Einige Projekte (auch der Source dieser Seite) sind unter meinem Github-Account zu finden. Abseits vom Bildschirmen gehe ich gern Wandern und spiele Volleyball.",
-    "location": {
-      "address": "Stelzerstraße 35",
-      "postalCode": "4020",
-      "city": "Linz",
-      "countryCode": "AT",
-      "region": "Oberösterreich"
-    },
-    "profiles": [
+
+  "name": "Dominik Wagner",
+
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "0.4.0"
+  },
+
+  "info": {
+    "label": "Developer",
+    "characterClass": "Programmer",
+    "brief": "",
+    "image": "",
+    "quote": "Do your work. Don't be stupdi"
+  },
+
+  "contact": {
+    "website": "https://wagnerdominik.at",
+    "phone": "1-650-999-7777",
+    "email": "dominik.wagner@sz-ybbs.ac.at"
+  },
+
+  "location": {
+    "address": "Stelzerstraße 35",
+    "city": "Linz",
+    "region": "Upper-Austria",
+    "code": "4020",
+    "country": "AT"
+  },
+
+  "projects": [
+    {
+      "title": "RUN!",
+      "category": "Game Development, Virtual Reality",
+      "role": "Project Leader",
+      "url": "https://youtube.com",
+      "start": "2014-09",
+      "description": "A resume authoring and analysis tool for OS X, Linux, and Windows.",
+      "summary": "Exemplar user for HackMyResume and FluentCV!",
+      "keywords": ["Unity", "Java", "C#", "Virtual Reality"],
+      "media": [
+        {
+          "category": "video",
+          "url": "https://www.youtube.com"
+        }
+      ]
+    }
+  ],
+
+  "social": [
+
+    {
+      "label": "GitHub",
+      "network": "GitHub",
+      "user": "wgnrd",
+      "url": "https://github.com/wgnrd"
+    }
+  ],
+
+  "employment": {
+
+    "summary": "1+ years industry IT and software development experience.",
+
+    "history": [
+
       {
-        "network": "github",
-        "username": "wgnrd",
-        "url": ""
+        "employer": "Programmierfabrik",
+        "url": "https://programmierfabrik.at",
+        "position": "DevOp",
+        "summary": "DevOp in various projects",
+        "start": "2016-07",
+        "keywords": ["Agile","Powershell","C#","C++","Windows Server","Oracle","MySQL","TFS"],
+        "highlights": ["Development of webportal"]
+      },
+      {
+        "employer": "Rotes Kreuz",
+        "position": "Social",
+        "summary": "",
+        "start": "2015-10",
+        "end": "2016-06",
+        "keywords": ["Paramedic"],
+        "highlights": ["Passed exam for Paramedic"]
+      }
+    ]
+
+  },
+
+  "education": {
+
+    "summary": "",
+
+    "level": "matriculation",
+
+    "history": [
+
+      {
+        "institution": "IT-HTL Ybbs",
+        "title": "Ing.",
+        "url": "https://www.youtube.com",
+        "start": "2010-09",
+        "end": "2015-07",
+        "summary": "summary",
+        "curriculum": ["Computer networking", "Software development", "Database"]
+      },
+
+      {
+        "institution": "HS Loosdorf",
+        "start": "2006-09",
+        "end": "2010-06"
+      }
+    ]
+
+  },
+
+  "affiliation": {
+    "summary": "Member of numerous collegiate and professional groups and organizations.",
+    "history": [
+      {
+        "role": "Member",
+        "organization": "IEEE",
+        "url": "https://www.ieee.org/index.html",
+        "start": "2013-06",
+        "summary": "Member in good standing since 2013-06."
+      },
+      {
+        "role": "Member",
+        "organization": "Apple Developer Network",
+        "url": "https://developer.apple.com/",
+        "summary": "Member of the [Apple Developer program](https://developer.apple.com/) since 2008."
+      },
+      {
+        "role": "Subscriber",
+        "organization": "MSDN",
+        "url": "https://msdn.microsoft.com",
+        "start": "2010",
+        "summary": "Super-Ultra-gold level Ultimate Access MSDN subscriber package with subscription toaster and XBox ping pong racket."
+      },
+      {
+        "role": "Coordinator",
+        "organization": "Campus Coder's Meetup",
+        "start": "2003-02",
+        "end": "2004-04",
+        "summary": "Host of a monthly **campus-wide meetup for CS students**. Code, coffee, and crullers!"
       }
     ]
   },
-  "work": [
-    {
-      "company": "Programmierfabrik",
-      "position": "Junior Developer",
-      "website": "http://www.programmierfabrik.at",
-      "startDate": "2016-07-01",
-      "summary": "Developer in verschiedenen Projekten",
-      "highlights": [
-        "Aufbau eines Webportal für E-Government",
-        "Sprintleiter in einem externen Projekt"
+
+  "service": {
+
+    "summary": "Active US Army Reserve member and Technology for Tots technical consultant and volunteer coordinator.",
+
+    "history": [
+      {
+        "flavor": "volunteer",
+        "position": "Technical Consultant",
+        "organization": "Technology for Tots",
+        "url": "http://technology-for-tots.org",
+        "start": "2003-11",
+        "end": "2005-06",
+        "summary": "Summary of this volunteer stint.",
+        "highlights": ["Accomplishment 1", "Accomplishment 2", "etc"]
+      },
+      {
+        "flavor": "military",
+        "position": "NCO",
+        "organization": "US Army Reserves",
+        "url": "http://www.usar.army.mil/",
+        "start": "1999-11",
+        "end": "2003-06",
+        "summary": "Summary of this military stint.",
+        "highlights": ["Accomplishment 1", "Accomplishment 2", "etc"]
+      }
+    ]
+
+  },
+
+  "skills": {
+
+    "sets": [
+      {
+        "name": "Web",
+        "level": "advanced",
+        "skills": [
+          "JavaScript", "HTML 5", "CSS", "LAMP", "MVC", "REST"
         ]
+      },
+      {
+        "name": "JavaScript",
+        "level": "master",
+        "skills": [
+          "Node.js", "Angular.js", "jQuery", "Bootstrap", "React.js", "Backbone.js"
+        ]
+      },
+      {
+        "name": "Database",
+        "level": "intermediate",
+        "skills": [
+          "MySQL", "PostgreSQL", "NoSQL", "ORM", "Hibernate"
+        ]
+      },
+      {
+        "name": "Cloud",
+        "level": "intermediate",
+        "skills": [
+          "AWS", "EC2", "RDS", "S3", "Azure", "Dropbox"
+        ]
+      },
+      {
+        "name": "Project",
+        "level": "beginner",
+        "skills": [
+          "Agile", "TFS", "JIRA", "GitHub", "Unified Process", "MS Project"
+        ]
+      }
+    ],
+
+    "list": [
+      {
+        "name": "C#",
+        "id": "1",
+        "summary": "Optional summary of your experience with the skill.",
+        "years": 5,
+        "proof": "http://myblog.com/interesting-cplusplus-post"
+      },
+      {
+        "name": "Python",
+        "id": "2",
+        "summary": "Optional summary of your experience with the skill.",
+        "level": "9",
+        "years": 7,
+        "proof": "http://myblog.com/interesting-cplusplus-post"
+      },
+      {
+        "name": "Javascript",
+        "summary": "Summary for Javascript",
+        "years": "3"
+      },
+      {
+        "name": "Linux",
+        "summary": "Optional summary of your experience with the skill.",
+        "years": "4+"
+      },
+      {
+        "name": "Scrum",
+        "summary": "Optional summary of your experience with the skill.",
+        "years": 1
+      }
+    ]
+  },
+
+  "samples": [
+    {
+      "title": "Asteroids",
+      "summary": "A browser-based space shooter built on Three.js.",
+      "url": "http://janef.me/asteroids",
+      "date": "2014-09"
     },
     {
-      "company": "Rettungsstelle Melk",
-      "position": "Zivildiener",
-      "website": "",
-      "startDate": "2015-09-01",
-      "endDate": "2016-06-31",
-      "summary": "Zivildiener in der Rettungsstelle Melk",
+      "title": "Rememberpedia",
+      "summary": "A website to help you remember things.",
+      "url": "https://rememberpedia.com",
+      "date": "2015-07"
+    }
+  ],
+
+  "writing": [
+    {
+      "title": "Teach Yourself GORFF in 21 Days",
+      "flavor": "book",
+      "date": "2008",
+      "publisher": {
+        "name": "Amazon",
+        "url": "https://www.amazon.com"
+      },
+      "url": "http://url.to.publication.com/blah",
+      "author": [ "Jane Fullstacker", "John Smith" ],
+      "summary": "A primer on the programming language of GORFF, whose for loops are coterminous with all of time and space."
+    },
+    {
+      "title": "Building User Interfaces with Electron and Atom",
+      "flavor": "article",
+      "date": "2011",
+      "publisher": {
+        "name": "Code Project",
+        "url": "http://codeproject.com"
+      },
+      "url": "http://codeproject.com/build-ui-electron-atom.aspx"
+    },
+    {
+      "title": "Jane Fullstacker's Blog",
+      "flavor": "blog",
+      "date": "2011",
+      "publisher": {
+        "name": "self",
+        "url": "http://janef.me"
+      },
+      "url": "http://janef.me"
+    }
+  ],
+
+  "reading": [
+    {
+      "title": "r/programming",
+      "flavor": "website",
+      "url": "https://www.reddit.com/r/programming/",
+      "summary": "Daily reader"
+    },
+    {
+      "title": "r/dailyprogrammer",
+      "flavor": "website",
+      "url": "https://www.reddit.com/r/programmer/",
+      "summary": "Daily reader"
+    }    
+  ],
+
+  "recognition": [
+    {
+      "flavor": "honor",
+      "from": "Dublin school of english",
+      "event": "English class",
+      "date": "2014"
+    },
+    {
+      "flavor": "honor",
+      "from": "IT-HTL Ybbs",
+      "title": "Summa cum laude",
+      "event": "matriculation",
+      "date": "2015"
+    },
+    {
+      "flavor": "honor",
+      "from": "72h Project",
+      "event": "72h Project",
+      "date": "2014"
+    },
+    {
+      "flavor": "honor",
+      "from": "72h Project",
+      "event": "72h Project",
+      "date": "2012"
+    }
+  ],
+
+
+   "languages": [
+    {
+      "language": "German",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent",
+      "years": 10
+    }
+  ],
+
+  "extracurricular": [
+    {
+      "title": "Bay Area Crew Club",
+      "activity": "",
+      "location": "San Francisco, CA",
+      "start": "2014-05"
+    },
+    {
+      "title": "Organizer / Manager",
+      "activity": "JavaScript Game Development Meetup",
+      "location": "Austin, TX",
+      "start": "2011-03",
+      "end": "2014-01",
       "highlights": [
-        "Ausbildung zum Sanitäter"
-        ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "IT HTL-Ybbs",
-      "area": "Netzwerktechnik",
-      "studyType": "Maturareife",
-      "startDate": "2010-09-01",
-      "endDate": "2015-07-01"
-    }
-  ],
-  
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "Mid-Tier",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
+        "Monthly speaker on creative JavaScript development.",
+        "Founded group and oversaw growth to 500+ members."
       ]
-    },
-    {
-      "name": "C#",
-      "level": "Mid-Tier"
+
     }
   ],
-  "languages": [
+
+  "governance": [
     {
-      "language": "Englisch",
-      "fluency": "Flüssig"
+      "flavor": "board",
+      "role": "Member",
+      "organization": "The Mommies Network",
+      "url": "http://themommiesnetwork.org",
+      "start": "2008-02",
+      "end": "2010-01",
+      "summary": "Since 2008 I've been a full-time member of the board of directors for TMN."
     },
     {
-      "language": "Deutsch",
-      "fluency": "Muttersprache"
+      "flavor": "committee",
+      "role": "Academic Contributor",
+      "organization": "Khronos Group",
+      "url": "https://www.khronos.org",
+      "start": "2015-01",
+      "highlights": [
+        "Participated in GORFF standardization process (Draft 2)."
+      ]
     }
   ],
+
   "interests": [
     {
-      "name": "Wandern"
+      "name": "reading",
+      "summary": "I am a fan of traveling romans, fantasy and thriller. I also read a view Comics.",
+      "keywords": [ "Bill Bryson", "fantasy", "Harry Potter", "LOTR" ]
+    },
+    {
+      "name": "hiking",
+      "summary": "I enjoy hiking, light mountain climbing."
+    },
+    {
+      "name": "Video games",
+      "summary": "I prefer inovative indie games, and old school rpg's."
     }
   ]
+
 }
