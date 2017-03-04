@@ -8,12 +8,12 @@
     "skills": "",
     "projects": "Projekte",
     "career": "Karriere",
-    "blog": "",
+    "blog": "Portfolio",
     "link": "Links"
   },
   "about_me": {
     "about_me": "Über mich",
-    "des": "Ich bin ein Software Developer & Sysadmin aus Melk (NÖ). Nach Feierabend arbeite ich gerne noch an großen und kleinen Hobbyprojekten. Einige Projekte (auch der Source dieser Seite) sind unter meinem Github-Account zu finden. Abseits vom Bildschirmen gehe ich gern Wandern und spiele Volleyball."
+    "des": "Ich bin ein Software Developer & Sysadmin aus Melk (NÖ). Einige Hobby-Projekte (auch der Source dieser Seite) sind unter meinem Github-Account zu finden."
   },
   "skills": {
     "my_skills": ""
@@ -45,7 +45,7 @@
     "hs_job": "Schüler"
   },
   "blog": {
-    "my_blog": ""
+    "my_blog": "Portfolio"
   },
   "link": {
     "link": "Links",

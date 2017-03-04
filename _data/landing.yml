@@ -24,10 +24,10 @@
   tpl: projects.html
   css: project
 
-- id: blog
+- id: Portfolio
   i18n: nav.blog
-  name: Blog
-  tpl: blog.html
+  name: Portfolio
+  tpl: js-projects.html
   css: testimonials navy-section
   
 - id: links
