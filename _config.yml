@@ -17,7 +17,7 @@ author:  # change following line to your infomation.
   email: dominik.wagner@sz-ybbs.ac.at # Leave blank if you don't have now
   facebook_username:  # Leave blank if you don't have now
   github_username: wgnrd  # Leave blank if you don't have now
-  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  avatar: /static/assets/img/landing/profpic.jpg  # upload your avatar at directory and edit it.
   skill_icon1:
     - name: icon-csharp
     - name: fa-github

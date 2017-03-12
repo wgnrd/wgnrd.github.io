@@ -1,0 +1,210 @@
+{
+  "basics": {
+    "name": "Dominik Wagner",
+    "label": "Developer",
+    "summary": "",
+    "website": "https://wagnerdominik.at",
+    "phone": "1-650-999-7777",
+    "email": "dominik.wagner@sz-ybbs.ac.at",
+    "picture": "",
+    "location": {
+      "address": "Stelzerstraße 38",
+      "postalCode": "4020",
+      "city": "Linz",
+      "countryCode": "AT",
+      "region": "Upper-Austria"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "wgnrd",
+        "url": "https://github.com/wgnrd"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Programmierfabrik",
+      "website": "https://programmierfabrik.at",
+      "position": "DevOp",
+      "startDate": "2016-07",
+      "summary": "DevOp in various projects",
+      "highlights": [
+        "Development of webportal"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "IT-HTL Ybbs",
+      "courses": [
+        "Computer networking",
+        "Software development",
+        "Database"
+      ],
+      "startDate": "2010-09",
+      "endDate": "2015-07"
+    },
+    {
+      "institution": "HS Loosdorf",
+      "startDate": "2006-09",
+      "endDate": "2010-06"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web",
+      "level": "advanced",
+      "keywords": [
+        "JavaScript",
+        "HTML 5",
+        "CSS",
+        "LAMP",
+        "MVC",
+        "REST"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "master",
+      "keywords": [
+        "Node.js",
+        "Angular.js",
+        "jQuery",
+        "Bootstrap",
+        "React.js",
+        "Backbone.js"
+      ]
+    },
+    {
+      "name": "Database",
+      "level": "intermediate",
+      "keywords": [
+        "MySQL",
+        "PostgreSQL",
+        "NoSQL",
+        "ORM",
+        "Hibernate"
+      ]
+    },
+    {
+      "name": "Cloud",
+      "level": "intermediate",
+      "keywords": [
+        "AWS",
+        "EC2",
+        "RDS",
+        "S3",
+        "Azure",
+        "Dropbox"
+      ]
+    },
+    {
+      "name": "Project",
+      "level": "beginner",
+      "keywords": [
+        "Agile",
+        "TFS",
+        "JIRA",
+        "GitHub",
+        "Unified Process",
+        "MS Project"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "flavor": "Public Service",
+      "organization": "Rotes Kreuz",
+      "position": "Social Service",
+      "startDate": "2015-10",
+      "endDate": "2016-06",
+      "website": "http://www.roteskreuz.at",
+      "highlights": [
+        "Passed exam for Paramedic"
+      ]
+    },
+    {
+      "flavor": "Volunteer",
+      "organization": "72h Projekt",
+      "position": "Volunteer",
+      "startDate": "2012-11",
+      "endDate": "2012-11",
+      "website": "http://www.roteskreuz.at"
+    },
+    {
+      "flavor": "Volunteer",
+      "organization": "72h Projekt",
+      "position": "Volunteer",
+      "startDate": "2014-11",
+      "endDate": "2014-11",
+      "website": "http://www.roteskreuz.at"
+    }
+  ],
+  "awards": [
+    {
+      "flavor": "honor",
+      "title": "",
+      "date": "2013",
+      "awarder": "Dublin school of english"
+    },
+    {
+      "flavor": "honor",
+      "title": "",
+      "date": "2015",
+      "awarder": "IT-HTL Ybbs"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Building User Interfaces with Electron and Atom",
+      "publisher": "Code Project",
+      "releaseDate": "2011",
+      "website": "http://codeproject.com/build-ui-electron-atom.aspx"
+    },
+    {
+      "name": "Jane Fullstacker's Blog",
+      "publisher": "self",
+      "releaseDate": "2011",
+      "website": "http://janef.me"
+    },
+    {
+      "name": "Teach Yourself GORFF in 21 Days",
+      "publisher": "Amazon",
+      "releaseDate": "2008",
+      "website": "http://url.to.publication.com/blah",
+      "summary": "A primer on the programming language of GORFF, whose for loops are coterminous with all of time and space."
+    }
+  ],
+  "interests": [
+    {
+      "name": "reading",
+      "summary": "I am a fan of traveling romans, fantasy and thriller. I also read a view Comics.",
+      "keywords": [
+        "Bill Bryson",
+        "fantasy",
+        "Harry Potter",
+        "LOTR"
+      ]
+    },
+    {
+      "name": "hiking",
+      "summary": "I enjoy hiking, light mountain climbing."
+    },
+    {
+      "name": "Video games",
+      "summary": "I prefer inovative indie games, and old school rpg's."
+    }
+  ],
+  "languages": [
+    {
+      "language": "German",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent",
+      "years": 10
+    }
+  ]
+}

@@ -22,7 +22,7 @@
   },
 
   "location": {
-    "address": "Stelzerstraße 35",
+    "address": "Stelzerstraße 38",
     "city": "Linz",
     "region": "Upper-Austria",
     "code": "4020",
@@ -36,6 +36,7 @@
       "role": "Project Leader",
       "url": "https://youtube.com",
       "start": "2014-09",
+      "end": "2015-05",
       "description": "A resume authoring and analysis tool for OS X, Linux, and Windows.",
       "summary": "Exemplar user for HackMyResume and FluentCV!",
       "keywords": ["Unity", "Java", "C#", "Virtual Reality"],
@@ -72,15 +73,6 @@
         "start": "2016-07",
         "keywords": ["Agile","Powershell","C#","C++","Windows Server","Oracle","MySQL","TFS"],
         "highlights": ["Development of webportal"]
-      },
-      {
-        "employer": "Rotes Kreuz",
-        "position": "Social",
-        "summary": "",
-        "start": "2015-10",
-        "end": "2016-06",
-        "keywords": ["Paramedic"],
-        "highlights": ["Passed exam for Paramedic"]
       }
     ]
 
@@ -96,7 +88,7 @@
 
       {
         "institution": "IT-HTL Ybbs",
-        "title": "Ing.",
+        "title": "",
         "url": "https://www.youtube.com",
         "start": "2010-09",
         "end": "2015-07",
@@ -148,28 +140,33 @@
 
   "service": {
 
-    "summary": "Active US Army Reserve member and Technology for Tots technical consultant and volunteer coordinator.",
+    "summary": "",
 
     "history": [
       {
-        "flavor": "volunteer",
-        "position": "Technical Consultant",
-        "organization": "Technology for Tots",
-        "url": "http://technology-for-tots.org",
-        "start": "2003-11",
-        "end": "2005-06",
-        "summary": "Summary of this volunteer stint.",
-        "highlights": ["Accomplishment 1", "Accomplishment 2", "etc"]
+        "flavor": "Public Service",
+        "position": "Social Service",
+        "organization": "Rotes Kreuz",
+        "url": "http://www.roteskreuz.at",
+        "start": "2015-10",
+        "end": "2016-06",
+        "highlights": ["Passed exam for Paramedic"]
       },
       {
-        "flavor": "military",
-        "position": "NCO",
-        "organization": "US Army Reserves",
-        "url": "http://www.usar.army.mil/",
-        "start": "1999-11",
-        "end": "2003-06",
-        "summary": "Summary of this military stint.",
-        "highlights": ["Accomplishment 1", "Accomplishment 2", "etc"]
+        "flavor": "Volunteer",
+        "position": "Volunteer",
+        "organization": "72h Projekt",
+        "url": "http://www.roteskreuz.at",
+        "start": "2012-11",
+        "end": "2012-11"
+      },
+      {
+        "flavor": "Volunteer",
+        "position": "Volunteer",
+        "organization": "72h Projekt",
+        "url": "http://www.roteskreuz.at",
+        "start": "2014-11",
+        "end": "2014-11"
       }
     ]
 
@@ -317,28 +314,17 @@
   "recognition": [
     {
       "flavor": "honor",
+      "title": "",
       "from": "Dublin school of english",
       "event": "English class",
-      "date": "2014"
+      "date": "2013"
     },
     {
       "flavor": "honor",
+      "title": "",
       "from": "IT-HTL Ybbs",
-      "title": "Summa cum laude",
       "event": "matriculation",
       "date": "2015"
-    },
-    {
-      "flavor": "honor",
-      "from": "72h Project",
-      "event": "72h Project",
-      "date": "2014"
-    },
-    {
-      "flavor": "honor",
-      "from": "72h Project",
-      "event": "72h Project",
-      "date": "2012"
     }
   ],
 
@@ -357,10 +343,11 @@
 
   "extracurricular": [
     {
-      "title": "Bay Area Crew Club",
-      "activity": "",
-      "location": "San Francisco, CA",
-      "start": "2014-05"
+      "title": "Cisco CCNA Exploration 4",
+      "activity": "Exam",
+      "location": "Ybbs",
+      "start": "2014",
+      "end": "2014"
     },
     {
       "title": "Organizer / Manager",
@@ -377,25 +364,6 @@
   ],
 
   "governance": [
-    {
-      "flavor": "board",
-      "role": "Member",
-      "organization": "The Mommies Network",
-      "url": "http://themommiesnetwork.org",
-      "start": "2008-02",
-      "end": "2010-01",
-      "summary": "Since 2008 I've been a full-time member of the board of directors for TMN."
-    },
-    {
-      "flavor": "committee",
-      "role": "Academic Contributor",
-      "organization": "Khronos Group",
-      "url": "https://www.khronos.org",
-      "start": "2015-01",
-      "highlights": [
-        "Participated in GORFF standardization process (Draft 2)."
-      ]
-    }
   ],
 
   "interests": [
