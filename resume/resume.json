@@ -22,9 +22,9 @@
   },
 
   "location": {
-    "address": "Stelzerstraße 38",
+    "address": "Stelzerstraße 35",
     "city": "Linz",
-    "region": "Upper-Austria",
+    "region": "Oberösterreich",
     "code": "4020",
     "country": "AT"
   },
@@ -34,18 +34,12 @@
       "title": "RUN!",
       "category": "Game Development, Virtual Reality",
       "role": "Project Leader",
-      "url": "https://youtube.com",
+      "url": "https://www.youtube.com/watch?v=g4qZsVpSYpM&t=23s",
       "start": "2014-09",
       "end": "2015-05",
       "description": "A resume authoring and analysis tool for OS X, Linux, and Windows.",
       "summary": "Exemplar user for HackMyResume and FluentCV!",
-      "keywords": ["Unity", "Java", "C#", "Virtual Reality"],
-      "media": [
-        {
-          "category": "video",
-          "url": "https://www.youtube.com"
-        }
-      ]
+      "keywords": ["Unity", "Java", "C#", "Virtual Reality"]
     }
   ],
 
@@ -69,10 +63,10 @@
         "employer": "Programmierfabrik",
         "url": "https://programmierfabrik.at",
         "position": "DevOp",
-        "summary": "DevOp in various projects",
+        "summary": "DevOp in verschiedenen Projekten",
         "start": "2016-07",
         "keywords": ["Agile","Powershell","C#","C++","Windows Server","Oracle","MySQL","TFS"],
-        "highlights": ["Development of webportal"]
+        "highlights": ["Entwicklung eines Webportal im E-Government Bereich"]
       }
     ]
 
@@ -89,11 +83,11 @@
       {
         "institution": "IT-HTL Ybbs",
         "title": "",
-        "url": "https://www.youtube.com",
+        "url": "http://www.sz-ybbs.ac.at/~sz-ybbs/it-htl/informationstechnologie/",
         "start": "2010-09",
         "end": "2015-07",
-        "summary": "summary",
-        "curriculum": ["Computer networking", "Software development", "Database"]
+        "summary": "",
+        "curriculum": ["Computer networking", "Software development"]
       },
 
       {
@@ -145,26 +139,26 @@
     "history": [
       {
         "flavor": "Public Service",
-        "position": "Social Service",
+        "position": "Zivildiener",
         "organization": "Rotes Kreuz",
         "url": "http://www.roteskreuz.at",
         "start": "2015-10",
         "end": "2016-06",
-        "highlights": ["Passed exam for Paramedic"]
+        "highlights": ["Sanitäterausbildung"]
       },
       {
         "flavor": "Volunteer",
-        "position": "Volunteer",
+        "position": "Freiwilliger",
         "organization": "72h Projekt",
-        "url": "http://www.roteskreuz.at",
+        "url": "https://www.72h.at/",
         "start": "2012-11",
         "end": "2012-11"
       },
       {
         "flavor": "Volunteer",
-        "position": "Volunteer",
+        "position": "Freiwilliger",
         "organization": "72h Projekt",
-        "url": "http://www.roteskreuz.at",
+        "url": "https://www.72h.at/",
         "start": "2014-11",
         "end": "2014-11"
       }
@@ -248,16 +242,16 @@
 
   "samples": [
     {
-      "title": "Asteroids",
+      "title": "Weekend Progress",
       "summary": "A browser-based space shooter built on Three.js.",
-      "url": "http://janef.me/asteroids",
-      "date": "2014-09"
+      "url": "http://wagnerdominik.at/js-stuff",
+      "date": "2017-03"
     },
     {
-      "title": "Rememberpedia",
-      "summary": "A website to help you remember things.",
-      "url": "https://rememberpedia.com",
-      "date": "2015-07"
+      "title": "Simon Says JS",
+      "summary": "Simon says Klon. Geschrieben in reinem JavaScript.",
+      "url": "https://wagnerdominik.at/simonsays",
+      "date": "2017-04"
     }
   ],
 
@@ -306,7 +300,7 @@
     {
       "title": "r/dailyprogrammer",
       "flavor": "website",
-      "url": "https://www.reddit.com/r/programmer/",
+      "url": "https://www.reddit.com/r/dailyprogrammer/",
       "summary": "Daily reader"
     }    
   ],
