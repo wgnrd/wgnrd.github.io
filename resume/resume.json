@@ -1,0 +1,226 @@
+{
+  "name": "Dominik Wagner",
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "0.4.0"
+  },
+  "info": {
+    "label": "Developer",
+    "characterClass": "Programmer",
+    "brief": "Do your work. Don't be stupid",
+    "image": "C:/domin_000/Documents/wagnerdominik.github.io/static/assets/img/landing/avatar.jpg",
+    "quote": "Do your work. Don't be stupid"
+  },
+  "contact": {
+    "website": "https://wagnerdominik.at",
+    "phone": "",
+    "email": "dominik.wagner@sz-ybbs.ac.at"
+  },
+  "location": {
+    "address": "Stelzerstraße 35",
+    "city": "Linz",
+    "region": "Oberösterreich",
+    "code": "4020",
+    "country": "AT"
+  },
+  "projects": [
+    {
+      "title": "RUN!",
+      "category": "Game Development, Virtual Reality",
+      "role": "Project Leader",
+      "url": "https://www.youtube.com/watch?v=g4qZsVpSYpM&t=23s",
+      "start": "2014-09",
+      "end": "2015-05",
+      "description": "A resume authoring and analysis tool for OS X, Linux, and Windows.",
+      "summary": "Exemplar user for HackMyResume and FluentCV!",
+      "keywords": [
+        "Unity",
+        "Java",
+        "C#",
+        "Virtual Reality"
+      ]
+    }
+  ],
+  "social": [
+    {
+      "label": "GitHub",
+      "network": "GitHub",
+      "user": "wgnrd",
+      "url": "https://github.com/wgnrd"
+    }
+  ],
+  "employment": {
+    "summary": "1+ years industry IT and software development experience.",
+    "history": [
+      {
+        "employer": "Programmierfabrik",
+        "url": "https://programmierfabrik.at",
+        "position": "DevOp",
+        "summary": "DevOp in verschiedenen Projekten",
+        "start": "2016-07",
+        "keywords": [
+          "Agile",
+          "Powershell",
+          "C#",
+          "C++",
+          "Windows Server",
+          "Oracle",
+          "MySQL",
+          "TFS"
+        ],
+        "highlights": [
+          "Entwicklung eines Webportal im E-Government Bereich"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "summary": "",
+    "level": "Matura",
+    "history": [
+      {
+        "institution": "IT-HTL Ybbs",
+        "area": "Netzwerktechnik",
+        "url": "http://www.sz-ybbs.ac.at/~sz-ybbs/it-htl/informationstechnologie",
+        "start": "2010-09",
+        "end": "2015-07",
+        "summary": "",
+        "location": "Ybbs"
+      },
+      {
+        "institution": "Cisco",
+        "title": "Teilnehmer",
+        "url": "http://www.cisco.com",
+        "start": "2011-09",
+        "end": "2014-05",
+        "curriculum": [
+          "Cisco CCNA Exploration 4",
+          "Cisco CCNA Exploration 3",
+          "Cisco CCNA Exploration 2",
+          "Cisco CCNA Discovery 1"
+        ]
+      },
+      {
+        "institution": "HS Loosdorf",
+        "start": "2006-09",
+        "end": "2010-06"
+      }
+    ]
+  },
+  "service": {
+    "summary": "",
+    "history": [
+      {
+        "flavor": "Public Service",
+        "position": "Zivildiener",
+        "organization": "Rotes Kreuz",
+        "url": "http://www.roteskreuz.at",
+        "start": "2015-10",
+        "end": "2016-06",
+        "highlights": [
+          "Sanitäterausbildung"
+        ]
+      },
+      {
+        "flavor": "Volunteer",
+        "position": "Freiwilliger",
+        "organization": "72h Projekt",
+        "url": "https://www.72h.at/",
+        "start": "2012-11",
+        "end": "2012-11"
+      },
+      {
+        "flavor": "Volunteer",
+        "position": "Freiwilliger",
+        "organization": "72h Projekt",
+        "url": "https://www.72h.at/",
+        "start": "2014-11",
+        "end": "2014-11"
+      }
+    ]
+  },
+  "skills": {
+    "list": [
+      {
+        "name": "C#",
+        "id": "1",
+        "summary": "Optional summary of your experience with the skill.",
+        "years": 5,
+        "proof": "http://myblog.com/interesting-cplusplus-post"
+      },
+      {
+        "name": "Python",
+        "id": "2",
+        "summary": "Optional summary of your experience with the skill.",
+        "level": "9",
+        "years": 3,
+        "proof": "http://myblog.com/interesting-cplusplus-post"
+      },
+      {
+        "name": "Javascript",
+        "summary": "Summary for Javascript",
+        "years": 2
+      },
+      {
+        "name": "Linux",
+        "summary": "Optional summary of your experience with the skill.",
+        "years": 5
+      }
+    ]
+  },
+  "samples": [
+    {
+      "title": "Weekend Progress",
+      "summary": "A browser-based space shooter built on Three.js.",
+      "url": "http://wagnerdominik.at/js-stuff",
+      "date": "2017-03"
+    },
+    {
+      "title": "Simon Says JS",
+      "summary": "Simon-says Klon. Geschrieben in  JavaScript.",
+      "url": "http://wagnerdominik.at/simonsays",
+      "date": "2017-04"
+    }
+  ],
+  "reading": [
+    {
+      "title": "r/programming",
+      "flavor": "website",
+      "url": "https://www.reddit.com/r/programming/",
+      "summary": "Daily reader"
+    },
+    {
+      "title": "r/dailyprogrammer",
+      "flavor": "website",
+      "url": "https://www.reddit.com/r/dailyprogrammer/",
+      "summary": "Daily reader"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Deutsch",
+      "level": "Muttersprache"
+    },
+    {
+      "language": "Englisch",
+      "level": "Fließend",
+      "years": 10
+    }
+  ],
+  "speaking": [],
+  "governance": [],
+  "interests": [
+    {
+      "name": "Lesen",
+      "summary": "I am a fan of traveling romans, fantasy and thriller. I also read a view Comics."
+    },
+    {
+      "name": "Hiking",
+      "summary": "I enjoy hiking, light mountain climbing."
+    },
+    {
+      "name": "Video games",
+      "summary": "I prefer innovative indie games, and old school rpg's."
+    }
+  ]
+}
