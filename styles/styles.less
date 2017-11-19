@@ -1,5 +1,6 @@
 @brnd-light: #f2ebbf;
-@brnd-lighter: lighten(@brnd-light, 5%);
+// @brnd-lighter: lighten(@brnd-light, 8%);
+@brnd-lighter: #1E4658;
 @brnd-green: #8cbeb2;
 @brnd-orng: #f3b562;
 @brnd-red: #f06060;
@@ -11,6 +12,34 @@ body {
     font-weight: 600;
 }
 
+p {
+    font-size: 1.4em;
+}
+
 nav {
     background-color: @brnd-green !important;
+}
+
+.logo {
+    max-height: 150px;
+}
+
+h1 {
+    margin-top: -280px;
+    font-size: 6.5em;
+    font-weight: bold;
+}
+
+.photo {
+    max-height: 500px;
+    margin-top: -100px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.invisible-button{
+    border: none;
+    box-shadow: none;
+    background: @brnd-lighter;
+    color: @brnd-green;
 }
