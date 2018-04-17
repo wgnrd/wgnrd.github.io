@@ -1,0 +1,122 @@
+@brnd-light: #e9e9e9;
+@brnd-darkblue: #1e4658;
+@brnd-green: #8cbeb2;
+@brnd-lightgreen: lighten(@brnd-green, 5%);
+@brnd-orng: #f3b562;
+@brnd-red: #f06060;
+@brnd-dark: #5c4b51;
+
+.myShadow() {
+  -moz-box-shadow: 0px 0px 0px 1px @brnd-green !important;
+  -webkit-box-shadow: 0px 0px 0px 1px @brnd-green !important;
+  box-shadow: 0px 0px 0px 1px @brnd-green !important;
+}
+
+body {
+  background-color: @brnd-darkblue !important;
+  color: @brnd-green;
+  font-weight: 600;
+}
+html {
+  font-size: 14px;
+}
+
+nav {
+  background-color: @brnd-green !important;
+}
+
+.logo {
+  max-height: 150px;
+}
+
+.hr {
+  border-top: 3px solid darken(@brnd-darkblue, 5%) !important;
+}
+
+.hr.sm {
+  border-top: 2px solid @brnd-green !important;
+  width: 30%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: -120px;
+
+  @media (max-width: 570px) {
+    margin-top: -90px;
+    font-size: 4em !important;
+  }
+  font-weight: bold;
+  text-shadow: -1px 0 @brnd-lightgreen, 0 1px @brnd-lightgreen,
+    1px 0 @brnd-lightgreen, 0 -1px @brnd-lightgreen;
+}
+
+.photo {
+  max-height: 400px;
+
+  @media (max-width: 570px) {
+    max-height: 300px;
+  }
+
+  margin-top: -20px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.invisible-button {
+  border: none;
+  box-shadow: none;
+  background: @brnd-darkblue;
+  color: @brnd-green;
+}
+
+.btn-outline-success {
+  color: @brnd-green;
+  border-color: @brnd-green;
+  &:hover {
+    color: @brnd-dark;
+    background-color: @brnd-green;
+    border-color: @brnd-green;
+  }
+  &:active {
+    color: @brnd-dark !important;
+    border-color: darken(@brnd-green, 5%) !important;
+    background-color: darken(@brnd-green, 5%) !important;
+    .myShadow;
+  }
+  &:focus {
+    .myShadow;
+  }
+}
+
+.darken-img-overlay {
+  background-color: #000000;
+}
+
+.darken-img {
+  opacity: 0.8;
+}
+
+h4 {
+  text-align: center;
+}
+
+.margin-bottom-row {
+  margin-bottom: 1.5em;
+}
+
+.footer {
+  background-color: @brnd-green;
+  color: darken(@brnd-darkblue, 5%);
+}
+
+.social-icon {
+  color: @brnd-darkblue;
+  &:hover {
+    color: darken(@brnd-darkblue, 5%);
+  }
+}
+
+.text {
+  text-align: justify;
+}
