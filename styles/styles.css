@@ -1,3 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  background-color: #fff;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
 body {
   background-color: #1e4658 !important;
   color: #8cbeb2;
@@ -9,6 +24,59 @@ html {
 nav {
   background-color: #8cbeb2 !important;
 }
+h1 {
+  margin-top: -120px;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  font-weight: bold;
+  text-shadow: -1px 0 #9cc7bd, 0 1px #9cc7bd, 1px 0 #9cc7bd, 0 -1px #9cc7bd;
+}
+@media (max-width: 570px) {
+  h1 {
+    margin-top: -90px;
+    font-size: 4em !important;
+  }
+}
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+h4 {
+  text-align: center;
+}
+h5 {
+  font-size: 1.25rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+a {
+  text-decoration: none;
+}
 .logo {
   max-height: 150px;
 }
@@ -19,17 +87,6 @@ nav {
   border-top: 2px solid #8cbeb2 !important;
   width: 30%;
   margin: 0 auto;
-}
-h1 {
-  margin-top: -120px;
-  font-weight: bold;
-  text-shadow: -1px 0 #9cc7bd, 0 1px #9cc7bd, 1px 0 #9cc7bd, 0 -1px #9cc7bd;
-}
-@media (max-width: 570px) {
-  h1 {
-    margin-top: -90px;
-    font-size: 4em !important;
-  }
 }
 .photo {
   max-height: 400px;
@@ -76,9 +133,6 @@ h1 {
 .darken-img {
   opacity: 0.8;
 }
-h4 {
-  text-align: center;
-}
 .margin-bottom-row {
   margin-bottom: 1.5em;
 }
@@ -109,23 +163,6 @@ h4 {
   margin-right: -15px;
   margin-left: -15px;
 }
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: left;
-  background-color: #fff;
-}
-img {
-  vertical-align: middle;
-  border-style: none;
-}
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -137,13 +174,6 @@ img {
 }
 .text-center {
   text-align: center !important;
-}
-h1 {
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
 }
 .align-items-center {
   -webkit-box-align: center !important;
@@ -190,14 +220,6 @@ h1 {
   font-weight: 300;
   line-height: 1.2;
 }
-h2 {
-  margin-top: 0px;
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
-}
 .margin-bottom-row {
   margin-bottom: 1.5em;
 }
@@ -224,16 +246,6 @@ h2 {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
-}
-h4 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
 }
 .card-deck {
   display: -webkit-box;
@@ -292,8 +304,8 @@ h4 {
 }
 .card-img-top {
   width: 100%;
-  border-top-left-radius: calc(-0.75rem);
-  border-top-right-radius: calc(-0.75rem);
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
 }
 .bg-dark {
   background-color: #343a40 !important;
@@ -306,19 +318,6 @@ h4 {
 }
 .card-title {
   margin-bottom: 0.75rem;
-}
-h5 {
-  font-size: 1.25rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 .btn {
   display: inline-block;
@@ -335,13 +334,9 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   background-color: transparent;
   background-image: none;
-}
-a {
-  text-decoration: none;
 }
 .navbar {
   position: relative;

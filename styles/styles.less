@@ -12,17 +12,100 @@
   box-shadow: 0px 0px 0px 1px @brnd-green !important;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  background-color: #fff;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
 body {
   background-color: @brnd-darkblue !important;
   color: @brnd-green;
   font-weight: 600;
 }
+
 html {
   font-size: 14px;
 }
 
 nav {
   background-color: @brnd-green !important;
+}
+
+h1 {
+  margin-top: -120px;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+
+  @media (max-width: 570px) {
+    margin-top: -90px;
+    font-size: 4em !important;
+  }
+  font-weight: bold;
+  text-shadow: -1px 0 @brnd-lightgreen, 0 1px @brnd-lightgreen,
+    1px 0 @brnd-lightgreen, 0 -1px @brnd-lightgreen;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  text-align: center;
+}
+
+h5 {
+  font-size: 1.25rem;
+
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo {
@@ -37,18 +120,6 @@ nav {
   border-top: 2px solid @brnd-green !important;
   width: 30%;
   margin: 0 auto;
-}
-
-h1 {
-  margin-top: -120px;
-
-  @media (max-width: 570px) {
-    margin-top: -90px;
-    font-size: 4em !important;
-  }
-  font-weight: bold;
-  text-shadow: -1px 0 @brnd-lightgreen, 0 1px @brnd-lightgreen,
-    1px 0 @brnd-lightgreen, 0 -1px @brnd-lightgreen;
 }
 
 .photo {
@@ -97,10 +168,6 @@ h1 {
   opacity: 0.8;
 }
 
-h4 {
-  text-align: center;
-}
-
 .margin-bottom-row {
   margin-bottom: 1.5em;
 }
@@ -138,26 +205,6 @@ h4 {
   margin-left: -15px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: left;
-  background-color: #fff;
-}
-
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -171,14 +218,6 @@ img {
 
 .text-center {
   text-align: center !important;
-}
-
-h1 {
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
 }
 
 .align-items-center {
@@ -224,15 +263,6 @@ h1 {
   line-height: 1.2;
 }
 
-h2 {
-  margin-top: 0px;
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
-}
-
 .margin-bottom-row {
   margin-bottom: 1.5em;
 }
@@ -261,18 +291,6 @@ h2 {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
-}
-
-h4 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
 }
 
 .card-deck {
@@ -350,20 +368,6 @@ h4 {
   margin-bottom: 0.75rem;
 }
 
-h5 {
-  font-size: 1.25rem;
-
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-  color: inherit;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -384,9 +388,7 @@ p {
   background-color: transparent;
   background-image: none;
 }
-a {
-  text-decoration: none;
-}
+
 .navbar {
   position: relative;
   display: -webkit-box;
