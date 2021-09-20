@@ -4,8 +4,14 @@ $yellow-crayola: #feee85ff;
 $capri: #00bbf9ff;
 $sea-green-crayola: #00f5d4ff;
 $color-dark: #404040;
+$lavender-floral: #a882dd;
 
-.hero {
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 200;
+  background-color: $sea-green-crayola;
+  color: $color-dark;
+  margin: 0px;
 }
 
 .hero_inner {
@@ -40,16 +46,35 @@ $color-dark: #404040;
   transform-origin: bottom left;
 }
 
-body {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-weight: 200;
-  background-color: $sea-green-crayola;
-  color: $color-dark;
-}
-
 .hero_heading {
   font-family: 'Be Vietnam Pro ', sans-serif;
   font-weight: 900;
   font-size: 3em;
   margin-top: 0.1em;
+}
+
+// animating the logo
+.hero_logo {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: draw 0.5s linear forwards;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.portfolio {
+  background-color: $yellow-crayola;
+}
+
+.outline {
+  -webkit-text-stroke: 2px $color-dark;
+  color: transparent;
+}
+@media (max-width: 710px) {
+  .hero_illustration {
+    display: none;
+  }
 }
