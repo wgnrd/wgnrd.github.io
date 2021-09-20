@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    {{ partial "site-style.html" . }}
+
+    <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
+  </head>
+  <body>
+    {{block "header" . }}
+    <!-- -->
+    {{ partial "site-header.html" .}}
+    <!-- -->
+    {{end}} {{ block "main" . }}
+    <!-- -->
+    {{ end }} {{ block "footer" . }}
+    <!-- -->
+    {{ partial "site-footer.html"}}
+    <!-- -->
+    {{ end }}
+  </body>
+</html>

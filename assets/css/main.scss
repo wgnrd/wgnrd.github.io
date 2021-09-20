@@ -1,0 +1,55 @@
+$amethyst: #9b5de5ff;
+$fire-opal: #e5625eff;
+$yellow-crayola: #feee85ff;
+$capri: #00bbf9ff;
+$sea-green-crayola: #00f5d4ff;
+$color-dark: #404040;
+
+.hero {
+}
+
+.hero_inner {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.hero_content {
+  flex-grow: 2;
+  padding-left: 5px;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(1rem + (8 - 1) * ((100vw - 5em) / (50 - 5)));
+  padding-right: calc(1rem + (8 - 1) * ((100vw - 5rem) / (50 - 5)));
+}
+
+.wrapper-lg {
+  max-width: 95rem;
+}
+
+.greeting {
+  display: inline-block;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4em;
+  transform: rotate(-5deg);
+  transform-origin: bottom left;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 200;
+  background-color: $sea-green-crayola;
+  color: $color-dark;
+}
+
+.hero_heading {
+  font-family: 'Be Vietnam Pro ', sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+  margin-top: 0.1em;
+}
