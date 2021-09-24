@@ -1,0 +1,17 @@
+@import 'def_color.scss';
+
+.card {
+  border: 1px solid $onyx;
+  border-radius: 15px;
+  margin: 2em;
+  max-width: 400px;
+  padding: 0.5em;
+  background-color: $cultured;
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
