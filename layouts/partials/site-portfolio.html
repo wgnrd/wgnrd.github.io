@@ -5,10 +5,15 @@
     <!-- create imagepath from data -->
     {{ $imagePath := printf "images/%s.png" .imageName}}
     <!-- load the image, resize and fingerprint it -->
-    {{ $image:= resources.Get $imagePath }} {{ $image = $image.Fit "400x400" |
-    fingerprint }}
+    {{ $image:= resources.Get $imagePath }} {{ $image = $image.Fit "400x400" }}
     <div class="card">
-      <img src="{{ $image.RelPermalink }}" alt="" class="card_image" />
+      <img
+        src="{{ $image.RelPermalink }}"
+        alt=""
+        class="card_image"
+        width="{{ .imageWidth }}"
+        height="{{ .imageHeight }}"
+      />
       <div class="card_body">
         <h2 class="card_title">{{ .title }}</h2>
         <div class="card_text">{{ .text }}</div>
