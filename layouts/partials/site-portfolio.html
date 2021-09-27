@@ -1,35 +1,21 @@
 <section class="portfolio">
-  <div class="card">
-    <img src="" alt="" class="card_image" />
-    <div class="card_body">
-      <h2 class="card_title">Maze generator</h2>
-      <div class="card_text">
-        Crisp ppt creativity requires you to murder your children. I know you're
-        busy race without a finish line regroup dunder mifflin but window of
-        opportunity core competencies, or can you put it on my calendar?.
+  <h1 class="portfolio_header">Portfolio</h1>
+  <div class="portfolio_cards">
+    {{ range . }}
+    <!-- create imagepath from data -->
+    {{ $imagePath := printf "images/%s.png" .imageName}}
+    <!-- load the image, resize and fingerprint it -->
+    {{ $image:= resources.Get $imagePath }} {{ $image = $image.Fit "400x400" |
+    fingerprint }}
+    <div class="card">
+      <img src="{{ $image.RelPermalink }}" alt="" class="card_image" />
+      <div class="card_body">
+        <h2 class="card_title">{{ .title }}</h2>
+        <div class="card_text">{{ .text }}</div>
+        <a href="{{ .demoUrl }}" class="card_button prime">Demo</a>
+        <a href="{{ .codeUrl }}" class="card_button">Code</a>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="" alt="" class="card_image" />
-    <div class="card_body">
-      <h2 class="card_title">Colorgame</h2>
-      <div class="card_text">
-        Make it more corporate please you better eat a reality sandwich before
-        you walk back in that boardroom, or we need to make the new version
-        clean and sexy
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <img src="" alt="" class="card_image" />
-    <div class="card_body">
-      <h2 class="card_title">Evolution</h2>
-      <div class="card_text">
-        Quick-win guerrilla marketing flesh that out for hop on the bandwagon.
-        Technologically savvy the horse is out of the barn yet deep dive for
-        synergestic actionables,
-      </div>
-    </div>
+    {{ end }}
   </div>
 </section>

@@ -1,0 +1,23 @@
+{
+  "01mg": {
+    "title": "Maze generator",
+    "text": "A maze generator using a recursive backtracking algorithm. It even works for 3D Mazes.",
+    "demoUrl": "https://wagnerdominik.at/mazeGen/",
+    "codeUrl": "https://github.com/wgnrd/mazeGen",
+    "imageName": "MazeGen"
+  },
+  "02ev": {
+    "title": "Evolution",
+    "text": "An evolution-simulator written in p5.js. The yellow dots are food for the triangles. The strongest triangles are the most likely to reproduce with slightly different abilities. The triangles have properties like speed and agility which are random generated.",
+    "demoUrl": "https://wagnerdominik.at/evolution/",
+    "codeUrl": "https://github.com/wgnrd/evolution",
+    "imageName": "Colorgame"
+  },
+  "03co": {
+    "title": "Colorgame",
+    "text": "A short weekend project written in Javascript. The goal is to guess the right color based on the hexadecimal color.",
+    "demoUrl": "https://wagnerdominik.at/colorgame/",
+    "codeUrl": "https://github.com/wgnrd/colorgame",
+    "imageName": "Evolution"
+  }
+}

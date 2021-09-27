@@ -1,17 +1,56 @@
 @import 'def_color.scss';
 
-.card {
-  border: 1px solid $onyx;
-  border-radius: 15px;
-  margin: 2em;
-  max-width: 400px;
-  padding: 0.5em;
-  background-color: $cultured;
+.portfolio {
+  background-color: $yellow-crayola;
 }
 
-.portfolio {
+.portfolio_header {
+  padding: 3rem 3rem 0rem 2rem;
+  font-size: 3rem;
+  margin: 0;
+}
+
+@media (max-width: 710px) {
+  .portfolio_header {
+    text-align: center;
+  }
+}
+
+.portfolio_cards {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.card {
+  border: 2px solid $onyx;
+  border-radius: 15px;
+  margin: 2em;
+  max-width: 400px;
+  padding: 0.5em 0.5em 1em 0.5em;
+  background-color: $cultured;
+}
+
+.card_image {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card_text {
+  margin-bottom: 1em;
+}
+
+.card_button {
+  color: $amethyst;
+  border: 1px solid $amethyst;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 400;
+  &:hover {
+    background-color: $amethyst;
+    color: $cultured;
+  }
 }
