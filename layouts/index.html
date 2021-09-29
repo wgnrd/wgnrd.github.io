@@ -4,6 +4,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Load the styling from another partial site -->
     {{ partial "site-style.html" . }}
 
     <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
@@ -12,14 +13,11 @@
     {{block "header" . }}
     <!-- -->
     {{ partial "site-header.html" .}}
-    <!-- -->
     <main id="main-content" class="main-content">
-      <!-- -->
+      <!-- Insert the hero section -->
       {{ partial "site-hero.html"}}
-      <!-- -->
-      <!-- -->
+      <!-- Insert the portfolio section, add static data from protfolio.json to further handle it by the partial site -->
       {{ partial "site-portfolio.html" .Site.Data.portfolio }}
-      <!-- -->
       <!-- -->
     </main>
     {{ end }} {{ block "footer" . }}
