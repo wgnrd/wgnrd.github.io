@@ -18,6 +18,8 @@
       {{ partial "site-hero.html"}}
       <!-- Insert the portfolio section, add static data from protfolio.json to further handle it by the partial site -->
       {{ partial "site-portfolio.html" .Site.Data.portfolio }}
+      <!-- Insert the contact section -->
+      {{ partial "site-contact.html" }}
       <!-- -->
     </main>
     {{ end }} {{ block "footer" . }}
