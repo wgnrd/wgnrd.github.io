@@ -18,7 +18,76 @@
         />
       </svg>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script>
+      let system;
+
+      function setup() {
+        var canvas = createCanvas(720, 400);
+        canvas.parent('canvas');
+        system = new ParticleSystem(createVector(width / 2, 50));
+      }
+
+      function draw() {
+        background('#00f5d4ff');
+        system.addParticle();
+        system.run();
+      }
+
+      // A simple Particle class
+      let Particle = function (position) {
+        this.acceleration = createVector(0, 0.05);
+        this.velocity = createVector(random(-3, 3), random(-2, 2));
+        this.position = position.copy();
+        this.lifespan = random(80, 120);
+      };
+
+      Particle.prototype.run = function () {
+        this.update();
+        this.display();
+      };
+
+      // Method to update position
+      Particle.prototype.update = function () {
+        this.velocity.add(this.acceleration);
+        this.position.add(this.velocity);
+        this.lifespan -= 2;
+      };
+
+      // Method to display
+      Particle.prototype.display = function () {
+        stroke(`rgba(0, 187, 249, ${this.lifespan / 100})`);
+        strokeWeight(10);
+        fill(`rgba(0, 187, 249, ${this.lifespan / 100})`);
+        ellipse(this.position.x, this.position.y, 5, 5);
+      };
+
+      // Is the particle still useful?
+      Particle.prototype.isDead = function () {
+        return this.lifespan < 2;
+      };
+
+      let ParticleSystem = function (position) {
+        this.origin = position.copy();
+        this.particles = [];
+      };
+
+      ParticleSystem.prototype.addParticle = function () {
+        this.particles.push(new Particle(this.origin));
+      };
+
+      ParticleSystem.prototype.run = function () {
+        for (let i = this.particles.length - 1; i >= 0; i--) {
+          let p = this.particles[i];
+          p.run();
+          if (p.isDead()) {
+            this.particles.splice(i, 1);
+          }
+        }
+      };
+    </script>
     <div class="hero_content">
+      <div id="canvas"></div>
       <span class="greeting"> &#128075; <br />Servus, I'm dominik</span>
       <h1 class="hero_heading">
         I like creating fun &amp;
