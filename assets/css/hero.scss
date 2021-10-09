@@ -47,6 +47,9 @@
   }
 }
 
+// creating the glitchy animation.
+// spawning two pseudo elements in different colors below the actual element
+// on hover these two elements are translating around the actual element
 .glitchy {
   -webkit-text-stroke: 2px $onyx;
   position: relative;

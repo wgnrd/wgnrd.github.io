@@ -14,15 +14,33 @@
 }
 
 .contact_link {
-  text-decoration: none;
   color: $onyx;
   font-weight: 400;
+  text-decoration: none;
+  position: relative;
+  &:before {
+    transition: all 0.3s ease-in-out;
+    content: '';
+    background-color: $onyx;
+    position: absolute;
+    bottom: -1px;
+    width: 0px;
+    height: 2px;
+    opacity: 0;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+      opacity: 1;
+      left: 0;
+    }
+  }
 }
 
 .contact_card {
-  margin: 1em 2em;
+  margin: 2rem 1rem;
   border: 2px solid $onyx;
   border-radius: 15px;
   background-color: $cultured;
-  padding: 1.5em 2em;
+  padding: 1.5rem 2rem;
 }
