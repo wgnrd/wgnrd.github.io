@@ -4,23 +4,11 @@
   background-color: $yellow-crayola;
 }
 
-.portfolio_header {
-  padding: 5rem 3rem 0rem 2rem;
-  font-size: 3rem;
-  margin: 0;
-}
-
 .portfolio_wrapper {
   margin-left: auto;
   margin-right: auto;
   padding-left: calc(1rem + (8 - 1) * ((100vw - 5em) / (50 - 5)));
   padding-right: calc(1rem + (8 - 1) * ((100vw - 5rem) / (50 - 5)));
-}
-
-@media (max-width: 710px) {
-  .portfolio_header {
-    text-align: center;
-  }
 }
 
 .portfolio_cards {

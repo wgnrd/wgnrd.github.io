@@ -1,11 +1,28 @@
 @import 'def_color.scss';
 
 .contact {
+  min-height: 50vh;
   background-color: $fire-opal;
+  font-size: calc((2vw + 5rem) / 5);
+  padding-bottom: 3rem;
 }
 
 .contact_header {
   padding: 3rem 3rem 0rem 2rem;
   font-size: 3rem;
   margin: 0;
+}
+
+.contact_link {
+  text-decoration: none;
+  color: $onyx;
+  font-weight: 400;
+}
+
+.contact_card {
+  margin: 1em 2em;
+  border: 2px solid $onyx;
+  border-radius: 15px;
+  background-color: $cultured;
+  padding: 1.5em 2em;
 }

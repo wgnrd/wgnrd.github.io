@@ -10,3 +10,35 @@ body {
   color: $onyx;
   margin: 0px;
 }
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(1rem + (7) * ((100vw - 5em) / (45)));
+  padding-right: calc(1rem + (7) * ((100vw - 5rem) / (45)));
+}
+
+@media (max-width: 710px) {
+  .wrapper {
+    padding-left: calc(1rem + 7 * ((10vw - 5em) / 45));
+    padding-right: calc(1rem + 7 * ((10vw - 5rem) / 45));
+  }
+}
+
+.wrapper-lg {
+  max-width: 95rem;
+}
+
+ul {
+  list-style: none;
+}
+.section_header {
+  padding: 5rem 3rem 0rem 2rem;
+  font-size: 3rem;
+  margin: 0;
+}
+@media (max-width: 710px) {
+  .section_header {
+    text-align: center;
+  }
+}

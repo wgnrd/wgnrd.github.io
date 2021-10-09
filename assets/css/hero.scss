@@ -13,17 +13,6 @@
   padding-left: 5px;
 }
 
-.hero_wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: calc(1rem + (8 - 1) * ((100vw - 5em) / (50 - 5)));
-  padding-right: calc(1rem + (8 - 1) * ((100vw - 5rem) / (50 - 5)));
-}
-
-.wrapper-lg {
-  max-width: 95rem;
-}
-
 .greeting {
   display: inline-block;
   font-family: 'Dancing Script', cursive;
