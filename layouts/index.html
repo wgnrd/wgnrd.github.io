@@ -12,7 +12,7 @@
     {{- if not (in (string .Site.BaseURL) "localhost") -}}
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src https://*; style-src-elem 'https://*'; child-src 'none';"
+      content="default-src https://*; img-src https://*; style-src-elem 'https://*'; child-src 'none';"
     />
     {{- end -}}
     <!-- Load the styling from another partial site -->
