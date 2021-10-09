@@ -1,5 +1,3 @@
-
-.DS_Store
-.vscode/*
-.firebaserc
-firebase.json
+/themes
+/public
+/resources/_gen
