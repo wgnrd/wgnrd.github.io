@@ -5,9 +5,16 @@
 }
 
 .portfolio_header {
-  padding: 3rem 3rem 0rem 2rem;
+  padding: 5rem 3rem 0rem 2rem;
   font-size: 3rem;
   margin: 0;
+}
+
+.portfolio_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(1rem + (8 - 1) * ((100vw - 5em) / (50 - 5)));
+  padding-right: calc(1rem + (8 - 1) * ((100vw - 5rem) / (50 - 5)));
 }
 
 @media (max-width: 710px) {
@@ -17,17 +24,20 @@
 }
 
 .portfolio_cards {
+  min-height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .card {
+  flex: 1 1 300px;
   border: 2px solid $onyx;
   border-radius: 15px;
   margin: 2em;
-  max-width: 400px;
+  max-width: 500px;
+  min-width: 200px;
   background-color: $cultured;
 }
 

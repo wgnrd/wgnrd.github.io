@@ -1,26 +1,29 @@
 <section class="portfolio">
-  <h1 class="portfolio_header">Portfolio</h1>
-  <div class="portfolio_cards">
-    {{ range . }}
-    <!-- create imagepath from data -->
-    {{ $imagePath := printf "images/%s.png" .imageName}}
-    <!-- load the image, resize and fingerprint it -->
-    {{ $image:= resources.Get $imagePath }} {{ $image = $image.Fit "400x400" }}
-    <div class="card">
-      <img
-        src="{{ $image.RelPermalink }}"
-        alt=""
-        class="card_image"
-        width="{{ .imageWidth }}"
-        height="{{ .imageHeight }}"
-      />
-      <div class="card_body">
-        <h2 class="card_title">{{ .title }}</h2>
-        <div class="card_text">{{ .text }}</div>
-        <a href="{{ .demoUrl }}" class="card_button prime">Demo</a>
-        <a href="{{ .codeUrl }}" class="card_button">Code</a>
+  <div class="portfolio_wrapper">
+    <h1 class="portfolio_header">Portfolio</h1>
+    <div class="portfolio_cards">
+      {{ range . }}
+      <!-- create imagepath from data -->
+      {{ $imagePath := printf "images/%s.png" .imageName}}
+      <!-- load the image, resize and fingerprint it -->
+      {{ $image:= resources.Get $imagePath }} {{ $image = $image.Fit "400x400"
+      }}
+      <div class="card">
+        <img
+          src="{{ $image.RelPermalink }}"
+          alt=""
+          class="card_image"
+          width="{{ .imageWidth }}"
+          height="{{ .imageHeight }}"
+        />
+        <div class="card_body">
+          <h2 class="card_title">{{ .title }}</h2>
+          <div class="card_text">{{ .text }}</div>
+          <a href="{{ .demoUrl }}" class="card_button prime">Demo</a>
+          <a href="{{ .codeUrl }}" class="card_button">Code</a>
+        </div>
       </div>
+      {{ end }}
     </div>
-    {{ end }}
   </div>
 </section>
