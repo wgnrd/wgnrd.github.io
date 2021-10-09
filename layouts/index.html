@@ -8,13 +8,6 @@
       name="description"
       content="This is the personal website of wagner dominik."
     />
-    <!-- Only add CSP if we are in production, otherwise resources will not get loaded -->
-    {{- if not (in (string .Site.BaseURL) "localhost") -}}
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src https://*; img-src https://*; style-src-elem 'https://*'; child-src 'none';"
-    />
-    {{- end -}}
     <!-- Load the styling from another partial site -->
     {{ partial "site-style.html" . }}
 
