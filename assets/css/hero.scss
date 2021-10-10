@@ -26,6 +26,7 @@
   font-weight: 900;
   font-size: 3em;
   margin-top: 0.1em;
+  position: relative;
 }
 
 // animating the logo
@@ -57,6 +58,10 @@
   text-decoration: none;
   transform: translate(-50%, -50%);
   margin: 0;
+  display: inline-block;
+  top: 2.05rem;
+  left: 9rem;
+  cursor: pointer;
 
   &:before,
   &:after {
