@@ -8,14 +8,14 @@
     "imageHeight": "400",
     "imageWidth": "323"
   },
-  "02ev": {
-    "title": "Evolution",
-    "text": "An evolution-simulator written in p5.js. The yellow dots are food for the triangles. The strongest triangles are the most likely to reproduce with slightly different abilities. The triangles have properties like speed and agility which are random generated. (Demo only works in Chrome)",
-    "demoUrl": "https://wagnerdominik.at/evolution/",
-    "codeUrl": "https://github.com/wgnrd/evolution",
-    "imageName": "Evolution",
-    "imageHeight": "400",
-    "imageWidth": ""
+  "02tr": {
+    "title": "Trocket",
+    "text": "A client querying the Everbase API using React and Apollo. You can search for any Alpha2Codes and get infos about the given Country.",
+    "demoUrl": "https://wagnerdominik.at/trocket",
+    "codeUrl": "https://github.com/wgnrd/trocket",
+    "imageName": "Trocket",
+    "imageHeight": "200",
+    "imageWidth": "200"
   },
   "03co": {
     "title": "Colorgame",
@@ -25,5 +25,14 @@
     "imageName": "Colorgame",
     "imageHeight": "400",
     "imageWidth": "392"
+  },
+  "04ev": {
+    "title": "Evolution",
+    "text": "An evolution-simulator written in p5.js. The yellow dots are food for the triangles. The strongest triangles are the most likely to reproduce with slightly different abilities. The triangles have properties like speed and agility which are random generated. (Demo only works in Chrome)",
+    "demoUrl": "https://wagnerdominik.at/evolution/",
+    "codeUrl": "https://github.com/wgnrd/evolution",
+    "imageName": "Evolution",
+    "imageHeight": "400",
+    "imageWidth": ""
   }
 }
