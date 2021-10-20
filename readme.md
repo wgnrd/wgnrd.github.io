@@ -1,3 +1,5 @@
+
+[![Build/Deploy](https://github.com/wgnrd/wgnrd.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/wgnrd/wgnrd.github.io/actions/workflows/main.yml)
 # Personal Website
 
 This is the repository for my personal website.
