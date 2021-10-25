@@ -1,13 +1,10 @@
 @import 'def_color.scss';
-@import 'hero.scss';
-@import 'portfolio.scss';
-@import 'contact.scss';
 
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 200;
-  background-color: $sea-green-crayola;
-  color: $onyx;
+  background-color: var(--color-hero-background);
+  color: var(--color-hero-text);
   margin: 0px;
 }
 
@@ -42,3 +39,7 @@ ul {
     text-align: center;
   }
 }
+
+@import 'hero.scss';
+@import 'portfolio.scss';
+@import 'contact.scss';

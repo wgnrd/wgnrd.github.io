@@ -2,7 +2,7 @@
 
 .contact {
   min-height: 50vh;
-  background-color: $fire-opal;
+  background-color: var(--color-contact-background);
   font-size: calc((2vw + 5rem) / 5);
   padding-bottom: 3rem;
 }
@@ -14,14 +14,14 @@
 }
 
 .contact_link {
-  color: $onyx;
+  color: var(--color-hero-text);
   font-weight: 400;
   text-decoration: none;
   position: relative;
   &:before {
     transition: all 0.3s ease-in-out;
     content: '';
-    background-color: $onyx;
+    background-color: var(--color-hero-text);
     position: absolute;
     bottom: -1px;
     width: 0px;
@@ -39,8 +39,8 @@
 
 .contact_card {
   margin: 2rem 1rem;
-  border: 2px solid $onyx;
+  border: 2px solid var(--color-card-border);
   border-radius: 15px;
-  background-color: $cultured;
+  background-color: var(--color-card-background);
   padding: 1.5rem 2rem;
 }

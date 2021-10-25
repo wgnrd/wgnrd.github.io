@@ -1,0 +1,19 @@
+<input type="checkbox" id="theme_switch" name="theme_switch" /><label
+  for="switch"
+  >Toggle</label
+>
+
+<script>
+  // Todo - move script to own file
+  document.documentElement.setAttribute('data-theme', 'dark');
+
+  let checkbox = document.querySelector('input[name=theme_switch]');
+
+  checkbox.addEventListener('change', (cb) => {
+    if (cb.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  });
+</script>
