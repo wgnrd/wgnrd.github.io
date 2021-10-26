@@ -1,7 +1,7 @@
 @import 'def_color.scss';
 
 .portfolio {
-  background-color: $yellow-crayola;
+  background-color: var(--color-portfolio-background);
 }
 
 .portfolio_wrapper {
@@ -21,12 +21,12 @@
 
 .card {
   flex: 1 1 300px;
-  border: 2px solid $onyx;
+  border: 2px solid var(--color-card-border);
   border-radius: 15px;
   margin: 2em;
   max-width: 500px;
   min-width: 200px;
-  background-color: $cultured;
+  background-color: var(--color-card-background);
 }
 
 .card_image {
@@ -44,14 +44,14 @@
 }
 
 .card_button {
-  color: $french-violet;
-  border: 1px solid $french-violet;
+  color: var(--color-card-button);
+  border: 1px solid var(--color-card-button);
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   text-decoration: none;
   font-weight: 400;
   &:hover {
-    background-color: $french-violet;
+    background-color: var(--color-card-button);
     color: $cultured;
   }
 }
