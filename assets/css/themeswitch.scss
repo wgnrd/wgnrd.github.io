@@ -44,7 +44,7 @@ input:checked + .slider {
   background-color: $onyx;
 }
 
-// thing that moves
+// thing that moves, in light state
 .slider:before {
   position: absolute;
   content: '';
@@ -54,65 +54,49 @@ input:checked + .slider {
   bottom: 3px;
   background-color: $yellow-crayola;
   border: 2px solid darken($yellow-crayola, 30);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
   border-radius: 50%;
   -webkit-animation: going-light 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) normal;
+  -webkit-transition: 0.4s;
   animation: going-light 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) normal;
+  transition: 0.4s;
 }
 
+// thing that moves, in dark state
 input:checked + .slider:before {
   background-color: white;
   border: 2px solid darken(white, 30);
   -webkit-animation: going-dark 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) forwards;
-  animation: going-dark 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) forwards;
   -webkit-transition: all 0.4s;
+  animation: going-dark 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) forwards;
   transition: all 0.4s;
 }
 
 @keyframes going-dark {
-  to {
-    transform: translateX(28px) rotate(180deg);
-    mask-image: radial-gradient(
-      circle 16px at 85% 85%,
-      transparent 16px,
-      #000 0
-    );
+  100% {
+    // for some reason the circle needs to be smaller than the transparent radient, else it masks the whole element in safari. (as of Safari V15)
     -webkit-transform: translateX(28px) rotate(180deg);
     -webkit-mask-image: radial-gradient(
-      circle 16px at 85% 85%,
+      circle 17px at 85% 85%,
       transparent 16px,
       #000 0
     );
-    // safari detection, as safari cannot handle #000 0 as a none mask
-    @media not all and (min-resolution: 0.001dpcm) {
-      -webkit-transform: translateX(28px) rotate(180deg);
-      -webkit-mask-image: radial-gradient(
-        circle 16px at 85% 85%,
-        transparent 16px,
-        #000 1
-      );
-    }
   }
 }
 
 @keyframes going-light {
   0% {
     -webkit-transform: translateX(28px) rotate(180deg);
-    transform: translateX(28px) rotate(180deg);
-    mask-image: radial-gradient(
-      circle 16px at 85% 85%,
+    -webkit-mask-image: radial-gradient(
+      circle 17px at 85% 85%,
       transparent 16px,
       #000 0
     );
   }
   100% {
     -webkit-transform: translateX(0px) rotate(0deg);
-    transform: translateX(0px) rotate(0deg);
-    mask-image: radial-gradient(
+    -webkit-mask-image: radial-gradient(
       circle 16px at 85% 85%,
-      transparent 00px,
-      #000 0
+      transparent 0px
     );
   }
 }
