@@ -74,15 +74,15 @@ input:checked + .slider:before {
   to {
     transform: translateX(28px) rotate(180deg);
     mask-image: radial-gradient(
-      circle 16px at calc(100% - 4px) calc(100% - 4px),
+      circle 16px at 85% 85%,
       transparent 16px,
       #000 0
     );
     -webkit-transform: translateX(28px) rotate(180deg);
     -webkit-mask-image: radial-gradient(
-      circle 16px at calc(100% - 4px) calc(100% - 4px),
+      circle 16px at 85% 85%,
       transparent 16px,
-      #000 0
+      #000 1
     );
   }
 }
@@ -92,7 +92,7 @@ input:checked + .slider:before {
     -webkit-transform: translateX(28px) rotate(180deg);
     transform: translateX(28px) rotate(180deg);
     mask-image: radial-gradient(
-      circle 5px at calc(100% - 4px) calc(100% - 4px),
+      circle 16px at 85% 85%,
       transparent 16px,
       #000 0
     );
@@ -101,8 +101,8 @@ input:checked + .slider:before {
     -webkit-transform: translateX(0px) rotate(0deg);
     transform: translateX(0px) rotate(0deg);
     mask-image: radial-gradient(
-      circle 5px at calc(100% - 4px) calc(100% - 4px),
-      transparent 0px,
+      circle 16px at 85% 85%,
+      transparent 00px,
       #000 0
     );
   }
