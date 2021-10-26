@@ -82,8 +82,17 @@ input:checked + .slider:before {
     -webkit-mask-image: radial-gradient(
       circle 16px at 85% 85%,
       transparent 16px,
-      #000 1
+      #000 0
     );
+    // safari detection, as safari cannot handle #000 0 as a none mask
+    @media not all and (min-resolution: 0.001dpcm) {
+      -webkit-transform: translateX(28px) rotate(180deg);
+      -webkit-mask-image: radial-gradient(
+        circle 16px at 85% 85%,
+        transparent 16px,
+        #000 1
+      );
+    }
   }
 }
 
