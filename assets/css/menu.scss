@@ -1,0 +1,10 @@
+@import 'def_color.scss';
+
+.menu_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu_item {
+  position: relative;
+}

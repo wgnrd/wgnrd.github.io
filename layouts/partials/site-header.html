@@ -1,5 +1,8 @@
 {{ $js := resources.Get "js/themeswitch.js"}} {{ $js := $js | minify |
 fingerprint }}
+<div class="menu_wrapper">
+  <div class="menu_item">Blog</div>
+</div>
 <div class="switch_wrapper">
   <p class="switch_label_light">Light</p>
   <label class="switch">
