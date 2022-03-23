@@ -2,9 +2,15 @@
 
 .menu_wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu_item {
   position: relative;
+  display: inline-block;
+  margin-left: 6vw;
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+  font-weight: 400;
 }
