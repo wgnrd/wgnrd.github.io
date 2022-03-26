@@ -1,11 +1,14 @@
 // define colors
 $amethyst: #9b5de5ff;
 $french-violet: #7222d3;
+$tyrian-purple: #5d0933;
 $fire-opal: #e5625eff;
 $yellow-crayola: #feee85ff;
+$field-drab: #664d00;
 $capri: #00bbf9ff;
 $tuscan-red: #783e3e;
 $sea-green-crayola: #00f5d4ff;
+$rich-black: #12403c;
 $onyx: #404040;
 $ming: #1d6067;
 $jet: #292929;
@@ -34,7 +37,7 @@ html[data-theme='dark'] {
   --color-glitch1: #{$fire-opal};
   --color-glitch2: #{$capri};
   --color-logo: #{$sea-green-crayola};
-  --color-portfolio-background: #{$jet};
+  --color-portfolio-background: #{$rich-black};
   --color-card-background: #{$onyx};
   --color-card-border: #{$cultured};
   --color-card-button: #{$amethyst};
