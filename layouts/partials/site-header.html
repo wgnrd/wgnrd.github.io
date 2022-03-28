@@ -2,7 +2,7 @@
 fingerprint }}
 <div class="menu_wrapper">
   {{ range . }}
-  <div class="menu_item">{{ .text }}</div>
+  <a href="{{ .url }}" class="menu_item">{{ .text }}</a>
   {{ end }}
   <div class="switch_wrapper">
     <p class="switch_label_light">Light</p>
