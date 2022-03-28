@@ -4,6 +4,7 @@ $french-violet: #7222d3;
 $tyrian-purple: #5d0933;
 $fire-opal: #e5625eff;
 $yellow-crayola: #feee85ff;
+$copper: #b6792b;
 $field-drab: #664d00;
 $capri: #00bbf9ff;
 $tuscan-red: #783e3e;
@@ -41,7 +42,7 @@ html[data-theme='dark'] {
   --color-card-background: #{$onyx};
   --color-card-border: #{$cultured};
   --color-card-button: #{$amethyst};
-  --color-contact-background: #{$ming};
+  --color-contact-background: #{$copper};
   --color-label-light: #{lighten($tuscan-red, 10)};
   --color-label-dark: #{$cultured};
 }
