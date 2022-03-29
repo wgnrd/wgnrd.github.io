@@ -1,0 +1,20 @@
+@import 'def_color.scss';
+
+.menu_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4vw;
+}
+
+.menu_item {
+  position: relative;
+  display: inline-block;
+  margin-right: 2vw;
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--color-hero-text);
+  font-weight: 500;
+}

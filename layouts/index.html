@@ -17,7 +17,7 @@
   <body>
     {{block "header" . }}
     <!-- -->
-    {{ partial "site-header.html" .}}
+    {{ partial "site-header.html" .Site.Data.menu}}
     <main id="main-content" class="main-content">
       <!-- Insert the hero section -->
       {{ partial "site-hero.html"}}

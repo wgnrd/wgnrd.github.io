@@ -1,12 +1,17 @@
 {{ $js := resources.Get "js/themeswitch.js"}} {{ $js := $js | minify |
 fingerprint }}
-<div class="switch_wrapper">
-  <p class="switch_label_light">Light</p>
-  <label class="switch">
-    <input type="checkbox" name="theme_switch" />
-    <span class="slider"></span>
-  </label>
-  <p class="switch_label_dark">Dark</p>
+<div class="menu_wrapper">
+  {{ range . }}
+  <a href="{{ .url }}" class="menu_item">{{ .text }}</a>
+  {{ end }}
+  <div class="switch_wrapper">
+    <p class="switch_label_light">Light</p>
+    <label class="switch">
+      <input type="checkbox" name="theme_switch" />
+      <span class="slider"></span>
+    </label>
+    <p class="switch_label_dark">Dark</p>
+  </div>
 </div>
 <script
   defer
