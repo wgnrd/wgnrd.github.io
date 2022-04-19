@@ -17,10 +17,9 @@
   <body>
     {{block "header" . }}
     <!-- -->
-    {{ partial "site-header.html" .Site.Data.menu}}
     <main id="main-content" class="main-content">
       <!-- Insert the hero section -->
-      {{ partial "site-hero.html"}}
+      {{ partial "site-hero.html" .Site.Data.menu}}
       <!-- Insert the portfolio section, add static data from protfolio.json to further handle it by the partial site -->
       {{ partial "site-portfolio.html" .Site.Data.portfolio }}
       <!-- Insert the contact section -->
