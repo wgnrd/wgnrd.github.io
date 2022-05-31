@@ -10,7 +10,7 @@ The whole website is done with [HUGO](https://gohugo.io).
 
 The styling is self created. The SCSS pipeline from HUGO is used to transpile and minify all the styles.
 The portfolio section gets all data from `/data/portfolio.json`. This data will be transformed by hugo on compile time.
-Any push to `main`-branch of this repository will start a new production build. The artifacts will be deployed, if the build is successful.
+Any push to `main`-branch of this repository will start a new production build. The artifacts will be deployed using github-actions, if the build is successful.
 
 ## Getting started
 To run the website in debug mode, HUGO needs to be installed.
