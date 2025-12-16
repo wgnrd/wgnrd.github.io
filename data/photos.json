@@ -1,0 +1,13 @@
+{
+  "01": {
+    "imageName": "photo1.jpg",
+    "description": "A beautiful sunset over the mountains",
+    "date": "2024-01-15"
+  },
+  "02": {
+    "imageName": "photo2.jpg",
+    "description": "City lights at night",
+    "date": "2024-02-20"
+  }
+}
+

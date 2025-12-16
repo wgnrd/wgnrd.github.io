@@ -1,0 +1,28 @@
+@import 'def_color.scss';
+
+.photos {
+  background-color: var(--color-portfolio-background);
+}
+
+.photos_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(1rem + (8 - 1) * ((100vw - 5em) / (50 - 5)));
+  padding-right: calc(1rem + (8 - 1) * ((100vw - 5rem) / (50 - 5)));
+}
+
+.photos_cards {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card_date {
+  color: var(--color-card-button);
+  font-size: 0.9rem;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+}
+
