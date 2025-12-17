@@ -1,0 +1,30 @@
+<section class="photos">
+  <div class="wrapper">
+    <h1 class="section_header">Photos</h1>
+    <p class="photos_headline">Everyone is an artist until rent is due</p>
+    <div class="photos_cards">
+      {{ $photosSlice := slice }}
+      {{ range $key, $value := . }}
+        {{ $photosSlice = $photosSlice | append $value }}
+      {{ end }}
+      {{ range sort $photosSlice "date" "desc" }}
+      <!-- create imagepath from data - photos are in static/images/ -->
+      <!-- imageName should include extension (e.g., "photo1.jpg") -->
+      {{ $imagePath := printf "/images/%s" .imageName}}
+      <div class="card">
+        <img
+          src="{{ $imagePath }}"
+          alt="{{ .description }}"
+          class="card_image"
+          loading="lazy"
+        />
+        <div class="card_body">
+          <div class="card_date">{{ $date := time .date }}{{ $date.Format "January 2, 2006" }}</div>
+          <div class="card_text">{{ .description }}</div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+

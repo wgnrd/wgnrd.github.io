@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Photos taken by Wagner Dominik."
+    />
+    <meta name="color-scheme" content="dark light" />
+    <!-- Load the styling from another partial site -->
+    {{ partial "site-style.html" . }}
+
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+  </head>
+  <body>
+    <main id="main-content" class="main-content">
+      <!-- Insert the header menu -->
+      {{ partial "site-header.html" .Site.Data.menu}}
+      <!-- Insert the photos section, add static data from photos.json to further handle it by the partial site -->
+      {{ partial "site-photos.html" .Site.Data.photos }}
+      <!-- -->
+    </main>
+    {{ partial "site-footer.html"}}
+    <!-- Photo modal JavaScript -->
+    {{ $photoModalJs := resources.Get "js/photomodal.js"}} {{ $photoModalJs := $photoModalJs | minify | fingerprint }}
+    <script
+      defer
+      language="javascript"
+      type="text/javascript"
+      src="{{ $photoModalJs.Permalink }}"
+    ></script>
+  </body>
+</html>
+

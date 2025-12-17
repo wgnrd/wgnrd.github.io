@@ -1,6 +1,10 @@
 {
   "01": {
-    "text": "",
-    "url": "https://wagnerdominik.at/blog"
+    "text": "Home",
+    "url": "/"
+  },
+  "02": {
+    "text": "Photos",
+    "url": "/photos"
   }
 }
