@@ -23,6 +23,14 @@
       <!-- -->
     </main>
     {{ partial "site-footer.html"}}
+    <!-- Photo modal JavaScript -->
+    {{ $photoModalJs := resources.Get "js/photomodal.js"}} {{ $photoModalJs := $photoModalJs | minify | fingerprint }}
+    <script
+      defer
+      language="javascript"
+      type="text/javascript"
+      src="{{ $photoModalJs.Permalink }}"
+    ></script>
   </body>
 </html>
 

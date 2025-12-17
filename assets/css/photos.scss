@@ -1,14 +1,37 @@
 @import 'def_color.scss';
 
+// Photos-specific color variables for better harmony
 .photos {
-  background-color: var(--color-portfolio-background);
+  // Light mode colors
+  --photos-bg: #fef5e7; // Warm cream background (softer than yellow)
+  --photos-accent: #8b6f47; // Warm brown/burgundy for accents
+  --photos-card-bg: #faf8f3; // Warm cream for cards (instead of cool gray)
+  --photos-text: #3d3528; // Warm dark brown for text
+  --photos-subtitle: #6b5b3d; // Muted warm brown for subtitle
+  --photos-title: #4a3f2f; // Warm dark brown for main title
+  
+  background-color: var(--photos-bg);
+}
+
+// Dark mode colors - inverse palette that complements dark red navbar
+html[data-theme='dark'] .photos {
+  --photos-bg: #2a1f1f; // Dark warm brown/red background
+  --photos-accent: #c49a6a; // Warm golden brown for accents
+  --photos-card-bg: #352828; // Dark warm brown for cards
+  --photos-text: #e8ddd4; // Light warm cream for text
+  --photos-subtitle: #d4b896; // Muted warm beige for subtitle
+  --photos-title: #e8ddd4; // Light warm cream for main title
+}
+
+.photos .section_header {
+  color: var(--photos-title);
 }
 
 .photos_headline {
   padding: 0 3rem 2rem 2rem;
   font-size: 1.5rem;
   font-style: italic;
-  color: var(--color-card-button);
+  color: var(--photos-subtitle);
   margin: 0;
   font-weight: 400;
 }
@@ -18,27 +41,224 @@
     text-align: center;
     padding: 0 2rem 2rem 2rem;
   }
+  
+  .photos .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
-.photos_wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: calc(1rem + (8 - 1) * ((100vw - 5em) / (50 - 5)));
-  padding-right: calc(1rem + (8 - 1) * ((100vw - 5rem) / (50 - 5)));
+// Reduce wrapper padding at medium screen sizes to use more space (photos only)
+@media (max-width: 1400px) and (min-width: 800px) {
+  .photos .wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .photos_cards {
   min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2em;
+  align-items: start;
+  justify-items: center;
+}
+
+@media (max-width: 1200px) {
+  .photos_cards {
+    justify-items: stretch;
+  }
+}
+
+// Override card styles specifically for photos page
+.photos .card {
+  background-color: var(--photos-card-bg);
+  border-color: var(--photos-accent);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  max-width: 350px;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Responsive grid columns
+@media (max-width: 2000px) {
+  .photos_cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .photos_cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em; // Slightly reduced gap
+  }
+  
+  // Allow cards to be larger at this breakpoint
+  .photos .card {
+    max-width: 100%; // Remove max-width restriction
+  }
+}
+
+@media (max-width: 1200px) {
+  .photos_cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+  
+  .photos .card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 710px) {
+  .photos_cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); // Use minmax to ensure proper sizing
+    gap: 0.5em; // Reduced gap for mobile
+    justify-items: stretch; // Make cards fill the grid cell
+  }
+  
+  .photos .card {
+    max-width: 100% !important; // Override any max-width
+    width: 100% !important; // Force full width
+    margin: 0; // Remove any default margins
+    box-sizing: border-box; // Include padding/border in width
+  }
+  
+  // Reduce image height on mobile
+  .photos .card_image {
+    height: 150px; // Smaller height for mobile
+  }
+}
+
+// Very small screens - back to 1 column
+@media (max-width: 480px) {
+  .photos_cards {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    justify-items: center; // Center single column
+  }
+  
+  .photos .card {
+    max-width: 280px;
+    width: auto;
+  }
+  
+  .photos .card_image {
+    height: 200px;
+  }
+}
+
+// Ensure all images have the same size
+.photos .card_image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photos .card_body {
+  color: var(--photos-text);
 }
 
 .card_date {
-  color: var(--color-card-button);
+  color: var(--photos-accent);
   font-size: 0.9rem;
   margin-bottom: 0.5em;
   font-weight: 400;
+  margin-top: 0.5em;
+}
+
+// Photo modal styles
+.photo_modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo_modal_active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.photo_modal_close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  line-height: 1;
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.photo_modal_image {
+  max-width: 90%;
+  max-height: 80vh;
+  object-fit: contain;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.photo_modal_info {
+  color: #fff;
+  text-align: center;
+  padding: 1rem 2rem 2rem;
+  max-width: 90%;
+}
+
+.photo_modal_date {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.photo_modal_description {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+@media (max-width: 710px) {
+  .photo_modal_close {
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2.5rem;
+  }
+  
+  .photo_modal_image {
+    max-width: 95%;
+    max-height: 70vh;
+  }
+  
+  .photo_modal_info {
+    padding: 1rem;
+  }
+  
+  .photo_modal_description {
+    font-size: 1rem;
+  }
 }
 
