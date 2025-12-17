@@ -4,6 +4,22 @@
   background-color: var(--color-portfolio-background);
 }
 
+.photos_headline {
+  padding: 0 3rem 2rem 2rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--color-card-button);
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 710px) {
+  .photos_headline {
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+
 .photos_wrapper {
   margin-left: auto;
   margin-right: auto;
