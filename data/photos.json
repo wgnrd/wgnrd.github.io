@@ -9,79 +9,84 @@
     "description": "Mitteilungsdrang",
     "date": "2023-07-11"
   },
-    "03": {
-      "imageName": "photo3.jpeg",
-      "description": "Erklärungsnot",
-      "date": "2023-07-12"
-    },
-    "04": {
-      "imageName": "photo4.jpeg",
-      "description": "Zugzwang",
-      "date": "2023-07-13"
-    },
-    "05": {
-      "imageName": "photo5.jpg",
-      "description": "Dämmerlicht",
-      "date": "2023-07-15"
-    },
-    "06": {
-      "imageName": "photo6.jpg",
-      "description": "Lokalaugenschein",
-      "date": "2023-07-17"
-    },
-    "07": {
-      "imageName": "photo7.jpg",
-      "description": "Sandkastenliebe",
-      "date": "2023-07-18"
-    },
-    "08": {
-      "imageName": "photo8.jpg",
-      "description": "Gefühlsbetont",
-      "date": "2023-07-28"
-    },
-    "09": {
-      "imageName": "photo9.jpg",
-      "description": "Eindringdrang",
-      "date": "2024-02-20"
-    },
-    "10": {
-      "imageName": "photo10.jpg",
-      "description": "Geschwindigkeitsübertretung",
-      "date": "2024-02-21"
-    },
-    "11": {
-      "imageName": "photo11.jpg",
-      "description": "Sternstunden",
-      "date": "2024-07-21"
-    },
-    "12": {
-      "imageName": "photo12.JPEG",
-      "description": "Papierstau",
-      "date": "2024-07-31"
-    },
-    "13": {
-      "imageName": "photo13.jpg",
-      "description": "Lebenszyklus",
-      "date": "2024-08-05"
-    },
-    "14": {
-      "imageName": "photo14.JPEG",
-      "description": "Liebesmühe",
-      "date": "2024-12-27"
-    },
-    "15": {
-      "imageName": "photo15.jpg",
-      "description": "Zaungespräche",
-      "date": "2025-03-16"
-    },
-    "16": {
-      "imageName": "photo16.jpg",
-      "description": "Fernweh",
-      "date": "2025-03-26"
-    }, "17": {
-      "imageName": "photo17.jpg",
-      "description": "Frühlingserwachen",
-      "date": "2025-04-14"
-    }
+  "03": {
+    "imageName": "photo3.jpeg",
+    "description": "Erklärungsnot",
+    "date": "2023-07-12"
+  },
+  "04": {
+    "imageName": "photo4.jpeg",
+    "description": "Zugzwang",
+    "date": "2023-07-13"
+  },
+  "05": {
+    "imageName": "photo5.jpg",
+    "description": "Dämmerlicht",
+    "date": "2023-07-15"
+  },
+  "06": {
+    "imageName": "photo6.jpg",
+    "description": "Lokalaugenschein",
+    "date": "2023-07-17"
+  },
+  "07": {
+    "imageName": "photo7.jpg",
+    "description": "Sandkastenliebe",
+    "date": "2023-07-18"
+  },
+  "08": {
+    "imageName": "photo8.jpg",
+    "description": "Gefühlsbetont",
+    "date": "2023-07-28"
+  },
+  "09": {
+    "imageName": "photo9.jpg",
+    "description": "Eindringdrang",
+    "date": "2024-02-20"
+  },
+  "10": {
+    "imageName": "photo10.jpg",
+    "description": "Geschwindigkeitsübertretung",
+    "date": "2024-02-21"
+  },
+  "11": {
+    "imageName": "photo11.jpg",
+    "description": "Sternstunden",
+    "date": "2024-07-21"
+  },
+  "12": {
+    "imageName": "photo12.JPEG",
+    "description": "Papierstau",
+    "date": "2024-07-31"
+  },
+  "13": {
+    "imageName": "photo13.jpg",
+    "description": "Lebenszyklus",
+    "date": "2024-08-05"
+  },
+  "14": {
+    "imageName": "photo14.JPEG",
+    "description": "Liebesmühe",
+    "date": "2024-12-27"
+  },
+  "15": {
+    "imageName": "photo15.jpg",
+    "description": "Zaungespräche",
+    "date": "2025-03-16"
+  },
+  "16": {
+    "imageName": "photo16.jpg",
+    "description": "Fernweh",
+    "date": "2025-03-26"
+  },
+  "17": {
+    "imageName": "photo17.jpg",
+    "description": "Frühlingserwachen",
+    "date": "2025-04-14"
+  },
+  "18": {
+    "imageName": "photo18.jpeg",
+    "description": "Geborgenheit",
+    "date": "2025-12-18"
+  }
 }
-
