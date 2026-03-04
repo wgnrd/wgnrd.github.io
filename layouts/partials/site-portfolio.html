@@ -6,23 +6,26 @@
       <!-- create imagepath from data -->
       {{ $imagePath := printf "images/%s.png" .imageName}}
       <!-- load the image, resize and fingerprint it -->
-      {{ $image:= resources.Get $imagePath }} {{ $image = $image.Fit "400x400"
+      {{ $image:= resources.Get $imagePath }} {{ $image = $image.Fit "800x500"
       }}
-      <div class="card">
+      <article class="card nb-card">
         <img
           src="{{ $image.RelPermalink }}"
-          alt=""
+          alt="Screenshot of {{ .title }}"
           class="card_image"
           width="{{ .imageWidth }}"
           height="{{ .imageHeight }}"
+          loading="lazy"
         />
         <div class="card_body">
           <h2 class="card_title">{{ .title }}</h2>
           <div class="card_text">{{ .text }}</div>
-          <a href="{{ .demoUrl }}" class="card_button prime">Demo</a>
-          <a href="{{ .codeUrl }}" class="card_button">Code</a>
+          <div class="card_actions">
+            <a href="{{ .demoUrl }}" class="card_button nb-button prime">Demo</a>
+            <a href="{{ .codeUrl }}" class="card_button nb-button">Code</a>
+          </div>
         </div>
-      </div>
+      </article>
       {{ end }}
     </div>
   </div>

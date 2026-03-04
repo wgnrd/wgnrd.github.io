@@ -1,46 +1,18 @@
-@import 'def_color.scss';
-
 .contact {
-  min-height: 50vh;
-  background-color: var(--color-contact-background);
-  font-size: calc((2vw + 5rem) / 5);
-  padding-bottom: 3rem;
+  background: linear-gradient(180deg, var(--bg) 0%, #dbeafe 100%);
+  padding-bottom: 3.5rem;
 }
 
-.contact_header {
-  padding: 3rem 3rem 0rem 2rem;
-  font-size: 3rem;
-  margin: 0;
-}
-
-.contact_link {
-  color: var(--color-hero-text);
-  font-weight: 400;
-  text-decoration: none;
-  position: relative;
-  &:before {
-    transition: all 0.3s ease-in-out;
-    content: '';
-    background-color: var(--color-hero-text);
-    position: absolute;
-    bottom: -1px;
-    width: 0px;
-    height: 2px;
-    opacity: 0;
-  }
-  &:hover {
-    &:before {
-      width: 100%;
-      opacity: 1;
-      left: 0;
-    }
-  }
+html[data-theme='dark'] .contact {
+  background: linear-gradient(180deg, var(--bg) 0%, #1f2c49 100%);
 }
 
 .contact_card {
-  margin: 2rem 1rem;
-  border: 2px solid var(--color-card-border);
-  border-radius: 15px;
-  background-color: var(--color-card-background);
-  padding: 1.5rem 2rem;
+  margin-top: 1.3rem;
+  padding: clamp(1rem, 2.2vw, 1.8rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.contact_link {
+  font-family: 'Archivo Black', 'Bricolage Grotesque', sans-serif;
 }

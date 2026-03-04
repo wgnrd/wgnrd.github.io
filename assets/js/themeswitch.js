@@ -1,18 +1,14 @@
-let checkbox = document.querySelector('input[name=theme_switch]');
+const checkbox = document.querySelector('input[name=theme_switch]');
+const root = document.documentElement;
+const savedTheme = localStorage.getItem('theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-// get the prefered color scheme from user to initially load a theme
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  document.documentElement.setAttribute('data-theme', 'dark');
-  checkbox.checked = true;
-} else {
-  document.documentElement.setAttribute('data-theme', 'light');
-  checkbox.checked = false;
-}
+const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+root.setAttribute('data-theme', initialTheme);
+checkbox.checked = initialTheme === 'dark';
 
-// add listener to switch theme if checkbox is engaged
 checkbox.addEventListener('change', (cb) => {
-  document.documentElement.setAttribute(
-    'data-theme',
-    cb.target.checked ? 'dark' : 'light'
-  );
+  const theme = cb.target.checked ? 'dark' : 'light';
+  root.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
 });

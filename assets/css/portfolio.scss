@@ -1,58 +1,89 @@
-@import 'def_color.scss';
-
 .portfolio {
-  background-color: var(--color-portfolio-background);
+  background: linear-gradient(180deg, var(--accent-4) 0%, var(--accent-1) 100%);
+  color: #1a1a1a;
+  padding-top: clamp(2rem, 6vw, 3.25rem);
+  padding-bottom: clamp(3rem, 6vw, 4.5rem);
 }
 
-.portfolio_wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: calc(1rem + (8 - 1) * ((100vw - 5em) / (50 - 5)));
-  padding-right: calc(1rem + (8 - 1) * ((100vw - 5rem) / (50 - 5)));
+html[data-theme='dark'] .portfolio {
+  color: var(--fg);
+}
+
+.portfolio .section_header {
+  color: #111;
+  padding-top: 0;
+}
+
+html[data-theme='dark'] .portfolio .section_header {
+  color: var(--fg);
 }
 
 .portfolio_cards {
-  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  padding: clamp(1.25rem, 2vw, 2rem) 0;
+}
+
+.portfolio .card {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.card {
-  flex: 1 1 300px;
-  border: 2px solid var(--color-card-border);
-  border-radius: 15px;
-  margin: 2em;
-  max-width: 500px;
-  min-width: 200px;
-  background-color: var(--color-card-background);
+.portfolio .card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: calc(var(--shadow-x) + 2px) calc(var(--shadow-y) + 2px) 0
+    var(--shadow-color);
 }
 
-.card_image {
-  height: auto;
+.portfolio .card:active {
+  transform: translate(2px, 2px);
+  box-shadow: calc(var(--shadow-x) - 2px) calc(var(--shadow-y) - 2px) 0
+    var(--shadow-color);
+}
+
+.portfolio .card_image {
   width: 100%;
-  border-radius: 12px 12px 0 0;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-top: var(--border-w) solid var(--border);
+  border-bottom: var(--border-w) solid var(--border);
 }
 
 .card_body {
-  padding: 0 1rem 1rem;
+  padding: 1rem;
+}
+
+.card_title {
+  margin: 0 0 0.75rem;
+  font-family: 'Archivo Black', 'Bricolage Grotesque', sans-serif;
+  font-size: clamp(1.3rem, 2.8vw, 1.85rem);
+  line-height: 1;
 }
 
 .card_text {
-  margin-bottom: 1em;
-  font-weight: 400;
+  color: var(--fg);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card_actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.card_button.prime {
+  background: var(--accent-3);
 }
 
 .card_button {
-  color: var(--color-card-button);
-  border: 1px solid var(--color-card-button);
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  text-decoration: none;
-  font-weight: 400;
-  &:hover {
-    background-color: var(--color-card-button);
-    color: $cultured;
+  background: var(--accent-2);
+}
+
+@media (max-width: 980px) {
+  .portfolio_cards {
+    grid-template-columns: 1fr;
   }
 }

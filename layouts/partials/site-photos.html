@@ -11,7 +11,7 @@
       <!-- create imagepath from data - photos are in static/images/ -->
       <!-- imageName should include extension (e.g., "photo1.jpg") -->
       {{ $imagePath := printf "/images/%s" .imageName}}
-      <div class="card">
+      <article class="card nb-card">
         <img
           src="{{ $imagePath }}"
           alt="{{ .description }}"
@@ -19,12 +19,11 @@
           loading="lazy"
         />
         <div class="card_body">
-          <div class="card_date">{{ $date := time .date }}{{ $date.Format "January 2, 2006" }}</div>
+          <div class="card_date nb-chip">{{ $date := time .date }}{{ $date.Format "January 2, 2006" }}</div>
           <div class="card_text">{{ .description }}</div>
         </div>
-      </div>
+      </article>
       {{ end }}
     </div>
   </div>
 </section>
-
