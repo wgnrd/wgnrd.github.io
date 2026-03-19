@@ -1,0 +1,44 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hero" x1="600" y1="350" x2="600" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#212121"/>
+      <stop offset="0.58" stop-color="#2A2A28"/>
+      <stop offset="1" stop-color="#4A382C"/>
+    </linearGradient>
+    <linearGradient id="plate" x1="600" y1="622" x2="600" y2="742" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F9F6"/>
+      <stop offset="1" stop-color="#D8D7D2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="#F6F0E4"/>
+  <rect x="76" y="60" width="1048" height="780" rx="36" fill="#F8F3E8"/>
+  <text x="114" y="130" fill="#2A2925" font-family="DejaVu Sans Mono" font-size="44" font-weight="700">=</text>
+  <text x="600" y="130" text-anchor="middle" fill="#3A342D" font-family="DejaVu Serif" font-size="42" font-style="italic" font-weight="700">Bitecraft</text>
+  <rect x="112" y="188" width="976" height="74" rx="18" fill="#F1ECE1"/>
+  <circle cx="160" cy="225" r="12" stroke="#A6A19A" stroke-width="4"/>
+  <line x1="168" y1="233" x2="180" y2="245" stroke="#A6A19A" stroke-width="4" stroke-linecap="round"/>
+  <text x="208" y="236" fill="#B6B0A8" font-family="DejaVu Sans" font-size="28">Search your heirloom collection...</text>
+  <rect x="112" y="296" width="170" height="52" rx="26" fill="#A55B1A"/>
+  <rect x="302" y="296" width="148" height="52" rx="26" fill="#E4DED1"/>
+  <rect x="470" y="296" width="154" height="52" rx="26" fill="#E4DED1"/>
+  <rect x="644" y="296" width="170" height="52" rx="26" fill="#E4DED1"/>
+  <text x="145" y="329" fill="#FFF8EE" font-family="DejaVu Sans" font-size="20" font-weight="700" letter-spacing="1">RECENT</text>
+  <text x="340" y="329" fill="#7A746B" font-family="DejaVu Sans" font-size="20" font-weight="700">SAVED</text>
+  <text x="509" y="329" fill="#7A746B" font-family="DejaVu Sans" font-size="20" font-weight="700">BAKING</text>
+  <text x="688" y="329" fill="#7A746B" font-family="DejaVu Sans" font-size="20" font-weight="700">AUTUMN</text>
+  <rect x="112" y="394" width="836" height="470" rx="16" fill="url(#hero)"/>
+  <ellipse cx="602" cy="742" rx="238" ry="46" fill="#CBC7C2"/>
+  <ellipse cx="602" cy="722" rx="262" ry="70" fill="url(#plate)"/>
+  <ellipse cx="602" cy="716" rx="220" ry="54" fill="#F2F0EB"/>
+  <ellipse cx="602" cy="698" rx="136" ry="28" fill="#CCB78A"/>
+  <path d="M486 688C528 628 668 622 718 690C684 708 522 710 486 688Z" fill="#A18A62"/>
+  <path d="M484 650C512 612 566 588 608 602C658 580 720 610 742 656C716 688 504 688 484 650Z" fill="#8C6F4D"/>
+  <path d="M524 618C548 590 584 588 610 612C630 588 668 592 694 618C674 644 544 646 524 618Z" fill="#6E563C"/>
+  <ellipse cx="618" cy="584" rx="16" ry="28" fill="#5F7E34"/>
+  <ellipse cx="596" cy="594" rx="12" ry="24" fill="#6D973C"/>
+  <ellipse cx="640" cy="594" rx="12" ry="24" fill="#6D973C"/>
+  <rect x="112" y="394" width="836" height="470" rx="16" stroke="#1E1D1A" stroke-opacity="0.08" stroke-width="4"/>
+  <text x="152" y="816" fill="#E6DED1" font-family="DejaVu Sans" font-size="18" letter-spacing="3">LIMITED EDITION</text>
+  <text x="152" y="868" fill="#FFFFFF" font-family="DejaVu Serif" font-size="66" font-weight="700">Wild Harvest</text>
+  <text x="152" y="930" fill="#FFFFFF" font-family="DejaVu Serif" font-size="66" font-weight="700">Mushroom Risotto</text>
+</svg>

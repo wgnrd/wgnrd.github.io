@@ -1,14 +1,14 @@
 {
-  "01mg": {
-    "title": "Maze generator",
-    "text": "A maze generator using a recursive backtracking algorithm. It even works for 3D Mazes. You can set the size of the maze, and the algortihm will generate a solvable maze.",
-    "demoUrl": "https://wagnerdominik.at/mazeGen/",
-    "codeUrl": "https://github.com/wgnrd/mazeGen",
-    "imageName": "MazeGen",
-    "imageHeight": "400",
-    "imageWidth": "323"
+  "00bc": {
+    "title": "BiteCraft (2026)",
+    "text": "A local-first recipe card builder with split-screen editing and live preview. Recipes autosave in the browser, can be saved as snapshots, shared through compressed links or JSON, and exported as polished card images.",
+    "demoUrl": "https://bitecraft.wagnerdominik.at/",
+    "codeUrl": "https://github.com/wgnrd/bitecraft",
+    "imageName": "Bitecraft",
+    "imageHeight": "900",
+    "imageWidth": "1200"
   },
-  "02nc": {
+  "01nc": {
     "title": "Nocmar (2025)",
     "text": "A pomodoro timer with integrated task management for enhanced productivity.",
     "demoUrl": "https://nocmar.wagnerdominik.at",
@@ -16,6 +16,15 @@
     "imageName": "Nocmar",
     "imageHeight": "736",
     "imageWidth": "526"
+  },
+  "02mg": {
+    "title": "Maze generator",
+    "text": "A maze generator using a recursive backtracking algorithm. It even works for 3D Mazes. You can set the size of the maze, and the algortihm will generate a solvable maze.",
+    "demoUrl": "https://wagnerdominik.at/mazeGen/",
+    "codeUrl": "https://github.com/wgnrd/mazeGen",
+    "imageName": "MazeGen",
+    "imageHeight": "400",
+    "imageWidth": "323"
   },
   "03co": {
     "title": "Colorgame",
@@ -33,6 +42,6 @@
     "codeUrl": "https://github.com/wgnrd/evolution",
     "imageName": "Evolution",
     "imageHeight": "400",
-    "imageWidth": ""
+    "imageWidth": "320"
   }
 }
